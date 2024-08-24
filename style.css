@@ -1,0 +1,3573 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.AppName h1 {
+  background: -webkit-linear-gradient(left, #607cf7, #24d9e6, #17ca76);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5vh;
+}
+
+.ExploreContainer li {
+  list-style: none;
+  margin-bottom: 0.8vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.ExploreContainer li:hover {
+  color: orange;
+}
+
+.playlistBox::-webkit-scrollbar {
+  display: none;
+}
+
+.poster img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.forward:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#fbff1a), color-stop(10%, #ff8818), to(#ff3131));
+  background: -o-linear-gradient(right, #fbff1a, #ff8818 10%, #ff3131 100%);
+  background: linear-gradient(to left, #fbff1a, #ff8818 10%, #ff3131 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.playy:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#fbff1a), color-stop(10%, #ff8818), to(#ff3131));
+  background: -o-linear-gradient(right, #fbff1a, #ff8818 10%, #ff3131 100%);
+  background: linear-gradient(to left, #fbff1a, #ff8818 10%, #ff3131 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.backward:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#fbff1a), color-stop(10%, #ff8818), to(#ff3131));
+  background: -o-linear-gradient(right, #fbff1a, #ff8818 10%, #ff3131 100%);
+  background: linear-gradient(to left, #fbff1a, #ff8818 10%, #ff3131 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.forward i:before {
+  display: inline;
+}
+
+.songcard::-webkit-scrollbar {
+  display: none;
+}
+
+.singerss::-webkit-scrollbar {
+  display: none;
+}
+
+.text3 h4 {
+  margin-bottom: 1vh;
+}
+
+.AppName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 10vh;
+  z-index: 56;
+}
+
+.AppName img {
+  width: 55%;
+}
+
+.Follow {
+  font-size: 2vh;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 375px) {
+  .sections {
+    width: 100vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    overflow-x: hidden;
+    height: 82vh;
+    border-radius: 0%;
+  }
+
+  .sections::-webkit-scrollbar {
+    display: none;
+  }
+
+  .AppName {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 3vh;
+    height: 10vh;
+    z-index: 56;
+  }
+
+  .AppName h1 {
+    font-size: 5.5vh;
+  }
+  .AppName img{
+    max-width: 28vh;
+  }
+  .baars {
+    opacity: 1;
+    right: 4vh;
+    font-size: 5.5vh;
+    z-index: 20;
+    color: rgb(165, 165, 165);
+  }
+
+  .navi {
+    top: 10vh;
+    width: 100%;
+    position: absolute;
+    padding-top: 3.5vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 23vh 20vh 22vh;
+    grid-template-rows: 23vh 20vh 22vh;
+    height: 0%;
+    opacity: 0;
+    -webkit-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    -o-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    max-height: 70vh;
+    z-index: 55;
+    background-color: #374151;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+  }
+
+
+  .navi li {
+    font-size: 2.7vh;
+    padding-left: 36vw;
+    color: rgb(165, 165, 165);
+    margin-bottom: 1vh;
+  }
+
+  .navi h4 {
+    padding-left: 36vw;
+    font-size: 2vh;
+    font-weight: bold;
+    color: rgb(194, 194, 194);
+  }
+
+  .cardsec {
+    position: relative;
+    -ms-grid-rows: 10vh 18vh 50vh 29vh;
+    grid-template-rows: 10vh 18vh 50vh 29vh;
+    padding: 0;
+    border: none;
+
+  }
+
+  .search {
+    padding-left: 1.1vw;
+    position: relative;
+    left: 3%;
+  }
+
+  .inputs {
+    width: 35vh;
+  }
+
+  .angles {
+    font-size: 5.5vw;
+  }
+
+  .mg {
+    font-size: 4vw;
+  }
+
+  .inputsbox {
+    width: 100%;
+    font-size: 2.5vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-webkit-input-placeholder {
+    font-size: 2vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-moz-placeholder {
+    font-size: 2vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox:-ms-input-placeholder {
+    font-size: 2vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-ms-input-placeholder {
+    font-size: 2vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::placeholder {
+    font-size: 2vh;
+    padding-left: 1vw;
+  }
+
+  .BgDiv {
+
+    height: 15.5vh;
+    z-index: 1;
+  }
+
+  .BgDiv i {
+    position: relative;
+    font-size: 15.5vh;
+    z-index: 1;
+    left: -5vh;
+  }
+
+  .BgDiv h1 {
+    font-size: 6vh;
+    left: 3vh;
+    z-index: 2;
+  }
+
+  .playlist {
+    position: relative;
+    height: 27vh;
+    top: -2.4vh;
+    overflow: visible;
+  }
+
+  .playtext h4 {
+    font-size: 2.6vh;
+  }
+
+  .playtext i {
+    font-size: 2.6vh;
+  }
+
+
+  .playlistBox {
+    min-height: 21vh;
+    max-height: 21vh;
+    gap: 2vh;
+  }
+
+  .card {
+    min-width: 21vh;
+    max-width: 21vh;
+    max-height: 21vh;
+    min-height: 21vh;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .card2 {
+    max-width: 14vh;
+    min-width: 14vh;
+    max-height: 100%;
+    min-height: 100%;
+
+  }
+
+  .img {
+    max-width: 100%;
+    max-height: 14.5vh;
+  }
+
+  .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .play {
+    padding: 0;
+    position: relative;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    top: -25vh;
+  }
+
+  .playtext2 h4 {
+    font-size: 2.6vh;
+  }
+
+  .playtext2 i {
+    font-size: 2.6vh;
+  }
+
+  .text {
+    font-size: 5vh;
+  }
+
+  .text h4 {
+    font-size: 2vh;
+  }
+
+  .songcard {
+    min-height: 23vh;
+  }
+
+  .playBtn {
+    position: absolute;
+    height: 20vh;
+    top: 80%;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+    z-index: 999;
+  }
+
+  .artists {
+    position: relative;
+    top: -5vh;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+
+  .artists h4 {
+    font-size: 2.6vh;
+  }
+
+  .artists i {
+    font-size: 2.6vh;
+  }
+
+  .singerss {
+    min-height: 15vh;
+    max-height: 15vh;
+    overflow-x: auto;
+    gap: 3vh;
+  }
+
+  .artistsDiv1,
+  .artistsDiv2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 4vw;
+  }
+
+  .img2 {
+    max-height: 10vh;
+    min-height: 10vh;
+    min-width: 10vh;
+    max-width: 10vh;
+  }
+
+  .img2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .text2 {
+    min-width: 15vh;
+
+  }
+
+  .songList {
+    position: absolute;
+    bottom: -30vh;
+    width: 100%;
+    height: 0%;
+    max-height: 72vh;
+    border-radius: 4vw;
+    overflow: hidden;
+    -webkit-transition: height 1.2s ease-in-out;
+    -o-transition: height 1.2s ease-in-out;
+    transition: height 1.2s ease-in-out;
+    z-index: 200;
+  }
+
+  .Follow {
+    color: rgb(179, 179, 179)
+  }
+
+  .containerKasset {
+    display: none;
+  }
+
+  .songss {
+    left: 6vw;
+    margin-top: 2vw;
+  }
+
+  .songss span {
+    font-size: 2.7vh;
+    margin-right: 2vw;
+    color: rgb(49, 49, 49);
+  }
+
+  .songss i {
+    font-size: 2.7vh;
+    color: rgb(112, 112, 112);
+  }
+
+  .songlistbg {
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    background-color: rgb(151, 151, 151);
+  }
+
+  .singerdiv {
+    min-width: 25vh;
+    max-width: 25vh;
+  }
+
+  .listItem {
+    height: 10vh;
+  }
+
+  .poster2 {
+    width: 8vh;
+    height: 8vh;
+    margin-left: 2vw;
+  }
+
+
+  .songDivs {
+    width: 100%;
+    height: 100%;
+    padding: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+  }
+
+  .albumName {
+    font-size: 3.5vw;
+  }
+
+  .moviename {
+    color: rgb(179, 179, 179);
+  }
+
+  .btns {
+    width: 7vh;
+    height: 7vh;
+    border-radius: 2vw;
+  }
+
+  .text3 {
+    position: relative;
+    top: -2vh;
+    margin-left: 2vw;
+  }
+
+  .text3 h4 {
+    font-size: 3.8vw;
+    margin-bottom: 1vw;
+  }
+
+  .text2 h4 {
+    font-size: 2.3vh;
+  }
+
+  .btnsdiv i {
+    font-size: 4.5vh;
+  }
+
+  .poster {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 15vh;
+    width: 14vh;
+    height: 14vh;
+    z-index: 999;
+  }
+
+  .uparrow {
+    bottom: -38vh;
+    color: rgb(165, 165, 165);
+    opacity: 1;
+    z-index: 90;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .close {
+    font-size: 3vh;
+    color: rgb(68, 68, 68);
+    z-index: 990;
+    right: 6%;
+    bottom: 36vh;
+    -webkit-transition: opacity 1.2s ease-in-out;
+    -o-transition: opacity 1.2s ease-in-out;
+    transition: opacity 1.2s ease-in-out;
+  }
+
+  .uparrow i {
+    font-size: 7vh;
+  }
+}
+
+@media only screen and (min-device-width : 376px) and (max-device-width : 425px) {
+  .sections {
+    width: 100vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    overflow-x: hidden;
+    height: 91vh;
+    border-radius: 0%;
+  }
+
+  .sections::-webkit-scrollbar {
+    display: none;
+  }
+
+  .AppName {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 3vh;
+    height: 11vh;
+    z-index: 56;
+  }
+.AppName img{
+  max-width: 30vh;
+}
+  .logo {
+    width: 28vh;
+  }
+
+  .AppName h1 {
+    font-size: 6vh;
+  }
+
+  .baars {
+    opacity: 1;
+    right: 6vw;
+    font-size: 5.5vh;
+    z-index: 20;
+    color: rgb(165, 165, 165);
+  }
+
+  .moviename {
+    color: rgb(179, 179, 179);
+  }
+
+  .navi {
+    top: 11vh;
+    width: 60%;
+    right: 0;
+    position: absolute;
+    padding-top: 2vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 22vh 20vh 22vh;
+    grid-template-rows: 22vh 20vh 22vh;
+    height: 0%;
+    opacity: 0;
+    -webkit-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    -o-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    border-top-left-radius: 5vw;
+    max-height: 67vh;
+    z-index: 55;
+    background-color: #374151;
+    border: 1px solid gray;
+  }
+
+
+  .navi li {
+    font-size: 2.7vh;
+    padding-left: 25%;
+    color: rgb(165, 165, 165);
+  }
+
+  .navi h4 {
+    padding-left: 25%;
+    font-size: 2.8vw;
+    font-weight: bold;
+    color: rgb(194, 194, 194);
+  }
+
+  .cardsec {
+    position: relative;
+    -ms-grid-rows: 12vh 18vh 60vh 35vh;
+    grid-template-rows: 12vh 18vh 60vh 35vh;
+    padding: 0;
+    border: none;
+  }
+
+  .search {
+    padding-left: 1.1vw;
+    position: relative;
+    left: 3%;
+  }
+
+  .inputs {
+    width: 40vh;
+  }
+
+  .angles {
+    font-size: 4.5vh;
+  }
+
+  .mg {
+    font-size: 4vw;
+  }
+
+  .inputsbox {
+    width: 100%;
+    font-size: 2.9vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-webkit-input-placeholder {
+    font-size: 2.4vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-moz-placeholder {
+    font-size: 2.4vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox:-ms-input-placeholder {
+    font-size: 2.4vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-ms-input-placeholder {
+    font-size: 2.4vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::placeholder {
+    font-size: 2.4vh;
+    padding-left: 1vw;
+  }
+
+  .BgDiv {
+    position: relative;
+    height: 17vh;
+    z-index: 1;
+  }
+
+  .BgDiv i {
+    font-size: 17vh;
+    z-index: 1;
+    left: -5vh;
+  }
+
+  .BgDiv h1 {
+    font-size: 6vh;
+    left: 4vh;
+    z-index: 2;
+  }
+
+  .playlist {
+    height: 30vh;
+    top: -0.9vh;
+    overflow-x: scroll;
+  }
+
+  .playtext h4 {
+    font-size: 2.6vh;
+  }
+
+  .playtext i {
+    font-size: 2.6vh;
+  }
+
+
+  .playlistBox {
+    min-height: 24vh;
+    max-height: 24vh;
+    gap: 3vw;
+  }
+
+  .card {
+    min-width: 24vh;
+    max-width: 24vh;
+    max-height: 24vh;
+    min-height: 24vh;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .card2 {
+    max-width: 16vh;
+    min-width: 16vh;
+    max-height: 100%;
+    min-height: 100%;
+  }
+
+  .img {
+    max-width: 100%;
+    max-height: 15.5vh;
+  }
+
+  .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .play {
+    padding: 0;
+    position: relative;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    top: -30vh;
+  }
+
+  .playtext2 h4 {
+    font-size: 2.6vh;
+  }
+
+  .playtext2 i {
+    font-size: 2.6vh;
+  }
+
+  .text {
+    font-size: 2.2vh;
+  }
+
+  .text h4 {
+    font-size: 2.2vh;
+  }
+
+  .songcard {
+    min-height: 25vh;
+  }
+
+  .playBtn {
+    position: absolute;
+    height: 21vh;
+    top: 90%;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+    z-index: 999;
+  }
+
+  .artists {
+    position: relative;
+    top: -3.3vh;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    height: 21vh;
+  }
+
+  .artists h4 {
+    font-size: 2.6vh;
+  }
+
+  .artists i {
+    font-size: 2.6vh;
+  }
+
+  .singerss {
+    min-height: 15vh;
+    max-height: 15vh;
+    overflow-x: auto;
+    gap: 3vh;
+  }
+
+  .singerdiv {
+    min-width: 30vh;
+    max-width: 30vh;
+  }
+
+  .artistsDiv1,
+  .artistsDiv2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 1vh;
+  }
+
+  .artistsDiv1 h4,
+  .artistsDiv2 h4 {
+    font-size: 2.6vh;
+  }
+
+  .img2 {
+    max-height: 10vh;
+    min-height: 10vh;
+    min-width: 10vh;
+    max-width: 10vh;
+  }
+
+  .img2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .text2 {
+    min-width: 17vh;
+  }
+
+  .songList {
+    position: absolute;
+    bottom: -31vh;
+    width: 80%;
+    height: 0%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    max-height: 78vh;
+    border-radius: 4vw;
+    overflow: hidden;
+    -webkit-transition: height 1.2s ease-in-out;
+    -o-transition: height 1.2s ease-in-out;
+    transition: height 1.2s ease-in-out;
+    z-index: 200;
+  }
+
+  .containerKasset {
+    display: none;
+  }
+
+  .songss {
+    left: 6vw;
+    margin-top: 2vw;
+  }
+
+  .songss span {
+    font-size: 2.8vh;
+    margin-right: 2vw;
+    color: rgb(49, 49, 49);
+  }
+
+  .songss i {
+    font-size: 2.8vh;
+    color: rgb(112, 112, 112);
+  }
+
+  .songlistbg {
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    background-color: rgb(151, 151, 151);
+  }
+
+  .listItem {
+    height: 11vh;
+  }
+
+  .poster2 {
+    width: 12.5vw;
+    height: 12.5vw;
+    margin-left: 1vw;
+  }
+
+
+  .songDivs {
+    width: 100%;
+    height: 100%;
+    padding: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+  }
+
+  .albumName {
+    font-size: 3.1vw;
+  }
+
+  .btns {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 2vw;
+  }
+
+  .text3 {
+    position: relative;
+    top: -2vh;
+    margin-left: 2vw;
+  }
+
+  .text3 h4 {
+    font-size: 3.2vw;
+    margin-bottom: 1vw;
+  }
+
+  .btnsdiv i {
+    font-size: 4.7vh;
+  }
+
+  .poster {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 18vh;
+    width: 15vh;
+    height: 15vh;
+    z-index: 999;
+  }
+
+  .uparrow {
+    position: absolute;
+    bottom: -38vh;
+    color: black;
+    opacity: 1;
+    z-index: 90;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: rgb(165, 165, 165);
+  }
+
+  .close {
+    font-size: 3vh;
+    color: rgb(68, 68, 68);
+    z-index: 990;
+    right: 16%;
+    bottom: 41vh;
+    -webkit-transition: opacity 1.2s ease-in-out;
+    -o-transition: opacity 1.2s ease-in-out;
+    transition: opacity 1.2s ease-in-out;
+  }
+
+  .uparrow i {
+    font-size: 8vh;
+  }
+
+  .Follow {
+    color: rgb(179, 179, 179)
+  }
+}
+
+@media only screen and (min-device-width : 426px) and (max-device-width : 535px) {
+  .sections {
+    width: 100vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    overflow-x: hidden;
+    height: 92vh;
+    border-radius: 0%;
+  }
+
+  .sections::-webkit-scrollbar {
+    display: none;
+  }
+
+  .AppName {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 3vh;
+    height: 11vh;
+    z-index: 56;
+  }
+  .AppName img{
+    max-width: 30vh;
+  }
+  .logo {
+    width: 28vh;
+  }
+
+  .AppName h1 {
+    font-size: 6.5vh;
+  }
+
+
+  .baars {
+    opacity: 1;
+    right: 6vw;
+    font-size: 7vw;
+    z-index: 20;
+    color: rgb(165, 165, 165);
+  }
+
+  .Follow {
+    color: rgb(179, 179, 179)
+  }
+
+  .moviename {
+    color: rgb(179, 179, 179);
+  }
+
+  .navi {
+    top: 11vh;
+    width: 60%;
+    right: 0;
+    position: absolute;
+    padding-top: 2vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 22vh 20vh 22vh;
+    grid-template-rows: 22vh 20vh 22vh;
+    height: 0%;
+    opacity: 0;
+    -webkit-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    -o-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    border-bottom-left-radius: 4vw;
+    border-bottom-right-radius: 4vw;
+    border-top-left-radius: 4vw;
+    max-height: 67vh;
+    z-index: 55;
+    background-color: #374151;
+    border: 1px solid gray;
+  }
+
+
+  .navi li {
+    font-size: 2.7vh;
+    padding-left: 35%;
+    color: rgb(165, 165, 165);
+  }
+
+  .navi h4 {
+    padding-left: 35%;
+    font-size: 2.2vh;
+    font-weight: bold;
+    color: rgb(194, 194, 194);
+  }
+
+  .cardsec {
+    position: relative;
+    -ms-grid-rows: 12vh 18vh 60vh 38vh;
+    grid-template-rows: 12vh 18vh 60vh 38vh;
+    padding: 0;
+    border: none;
+  }
+
+  .search {
+    padding-left: 1.1vw;
+    position: relative;
+    left: 3%;
+  }
+
+  .inputs {
+    width: 45vh;
+  }
+
+  .angles {
+    font-size: 4vw;
+  }
+
+  .mg {
+    font-size: 3vw;
+  }
+
+  .inputsbox {
+    width: 100%;
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-webkit-input-placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-moz-placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox:-ms-input-placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-ms-input-placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .BgDiv {
+    position: relative;
+    height: 18vh;
+    z-index: 1;
+
+  }
+
+  .BgDiv i {
+    font-size: 18vh;
+    z-index: 1;
+    left: -5vh;
+  }
+
+  .BgDiv h1 {
+    font-size: 7vh;
+    left: 4vh;
+    z-index: 2;
+  }
+
+  .playlist {
+    height: 33vh;
+
+    overflow-x: scroll;
+  }
+
+  .playtext h4 {
+    font-size: 2.8vw;
+  }
+
+  .playtext i {
+    font-size: 2.8vw;
+  }
+
+
+  .playlistBox {
+    min-height: 26vh;
+    max-height: 26vh;
+    gap: 2.5vw;
+  }
+
+  .card {
+    min-width: 27vh;
+    max-width: 27vh;
+    max-height: 100%;
+    min-height: 100%;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .card2 {
+    max-width: 16vh;
+    min-width: 16vh;
+    min-height: 100%;
+    max-height: 100%;
+  }
+
+  .img {
+    max-width: 100%;
+    max-height: 15.5vh;
+  }
+
+  .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .play {
+    padding: 0;
+    position: relative;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    top: -27vh;
+  }
+
+  .playtext2 h4 {
+    font-size: 2.8vw;
+  }
+
+  .playtext2 i {
+    font-size: 2.8vw;
+  }
+
+  .moviename {
+    font-size: 2.2vh;
+  }
+
+  .songname {
+    font-size: 2.3vh;
+  }
+
+  .songcard {
+    min-height: 25vh;
+  }
+
+  .playBtn {
+    position: absolute;
+    height: 21vh;
+    top: 90%;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+    z-index: 999;
+  }
+
+  .artists {
+    position: relative;
+    top: -4vw;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    height: 21vh;
+  }
+
+  .artists h4 {
+    font-size: 2.8vw;
+  }
+
+  .artists i {
+    font-size: 2.8vw;
+  }
+
+  .singerss {
+    min-height: 15vh;
+    max-height: 15vh;
+    overflow-x: auto;
+    gap: 2vh;
+  }
+
+  .singerdiv {
+    min-width: 32vh;
+    max-width: 32vh;
+  }
+
+  .artistsDiv1,
+  .artistsDiv2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 1vh;
+  }
+
+  .artistsDiv1 h4,
+  .artistsDiv2 h4 {
+    font-size: 2.5vh;
+  }
+
+  .img2 {
+    max-height: 10vh;
+    min-height: 10vh;
+    min-width: 10vh;
+    max-width: 10vh;
+  }
+
+  .img2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .text2 {
+    min-width: 18vh;
+  }
+
+  .songList {
+    position: absolute;
+    bottom: -31vh;
+    width: 75%;
+    height: 0%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    max-height: 84vh;
+    border-radius: 3vh;
+    overflow: hidden;
+    -webkit-transition: height 1.2s ease-in-out;
+    -o-transition: height 1.2s ease-in-out;
+    transition: height 1.2s ease-in-out;
+    z-index: 200;
+  }
+
+  .containerKasset {
+    display: none;
+  }
+
+  .songss {
+    left: 6vw;
+    margin-top: 2vw;
+  }
+
+  .songss span {
+    font-size: 3vh;
+    margin-right: 2vh;
+    color: rgb(49, 49, 49);
+  }
+
+  .songss i {
+    font-size: 3.2vh;
+    margin-top: 1vh;
+    color: rgb(112, 112, 112);
+  }
+
+  .songlistbg {
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    background-color: rgb(151, 151, 151);
+  }
+
+  .listItem {
+    height: 12vh;
+  }
+
+  .poster2 {
+    width: 10vh;
+    height: 10vh;
+    margin-left: 1vw;
+  }
+
+
+  .songDivs {
+    width: 100%;
+    height: 100%;
+    padding: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+  }
+
+  .albumName {
+    font-size: 2.6vh;
+  }
+
+  .btns {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 2vh;
+  }
+
+  .text3 {
+    position: relative;
+    top: -2vh;
+    margin-left: 2vh;
+  }
+
+  .text3 h4 {
+    font-size: 2.7vh;
+    margin-bottom: 1vh;
+  }
+
+  .btnsdiv i {
+    font-size: 4.7vh;
+  }
+
+  .poster {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 18vh;
+    width: 15vh;
+    height: 15vh;
+    z-index: 999;
+  }
+
+  .uparrow {
+    position: absolute;
+    bottom: -42%;
+    color: rgb(165, 165, 165);
+    opacity: 1;
+    z-index: 90;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .close {
+    font-size: 3vh;
+    color: rgb(68, 68, 68);
+    z-index: 990;
+    right: 18vw;
+    bottom: 51%;
+    -webkit-transition: opacity 1.2s ease-in-out;
+    -o-transition: opacity 1.2s ease-in-out;
+    transition: opacity 1.2s ease-in-out;
+  }
+
+  .uparrow i {
+    font-size: 7.5vh;
+  }
+}
+
+@media only screen and (min-device-width : 536px) and (max-device-width : 635px) {
+  .sections {
+    width: 100vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    overflow-x: hidden;
+    height: 93vh;
+    border-radius: 0%;
+  }
+
+  .sections::-webkit-scrollbar {
+    display: none;
+  }
+
+  .AppName {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 4vh;
+    height: 11vh;
+    z-index: 56;
+  }
+
+  .logo {
+    width: 28vh;
+  }
+
+  .AppName h1 {
+    font-size: 6.5vh;
+  }
+
+  .AppName img{
+    max-width: 35vh;
+  }
+
+  .baars {
+    opacity: 1;
+    right: 6vw;
+    font-size: 5vw;
+    z-index: 20;
+    color: rgb(165, 165, 165);
+  }
+
+  .Follow {
+    color: rgb(179, 179, 179)
+  }
+
+  .moviename {
+    color: rgb(179, 179, 179);
+  }
+
+  .navi {
+    top: 11vh;
+    width: 50%;
+    right: 0;
+    position: absolute;
+    padding-top: 2vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 22.5vh 20.5vh 22.5vh;
+    grid-template-rows: 22.5vh 20.5vh 22.5vh;
+    height: 0%;
+    opacity: 0;
+    -webkit-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    -o-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    border-bottom-left-radius: 4vw;
+    border-bottom-right-radius: 4vw;
+    border-top-left-radius: 4vw;
+    max-height: 70vh;
+    z-index: 55;
+    background-color: #374151;
+    border: 1px solid gray;
+  }
+
+
+  .navi li {
+    font-size: 2.9vh;
+    padding-left: 35%;
+    color: rgb(165, 165, 165);
+  }
+
+  .navi h4 {
+    padding-left: 35%;
+    font-size: 2.25vh;
+    font-weight: bold;
+    color: rgb(194, 194, 194);
+  }
+
+  .cardsec {
+    position: relative;
+    -ms-grid-rows: 12vh 18vh 60vh 40vh;
+    grid-template-rows: 12vh 18vh 60vh 40vh;
+    padding: 0;
+    border: none;
+  }
+
+  .search {
+    padding-left: 1.1vw;
+    position: relative;
+    left: 3%;
+  }
+
+  .inputs {
+    width: 45vh;
+  }
+
+  .angles {
+    font-size: 4vw;
+  }
+
+  .mg {
+    font-size: 3vw;
+  }
+
+  .inputsbox {
+    width: 100%;
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-webkit-input-placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-moz-placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox:-ms-input-placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-ms-input-placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .BgDiv {
+    position: relative;
+    height: 17vh;
+    z-index: 1;
+  }
+
+  .BgDiv i {
+    font-size: 17vh;
+    z-index: 1;
+    left: -3vh;
+  }
+
+  .BgDiv h1 {
+    font-size: 6vh;
+    left: 5vh;
+    z-index: 2;
+  }
+
+  .playlist {
+    height: 32vh;
+    top: -1vh;
+    overflow-x: scroll;
+  }
+
+  .playtext h4 {
+    font-size: 2.7vh;
+  }
+
+  .playtext i {
+    font-size: 2.7vh;
+  }
+
+
+  .playlistBox {
+    min-height: 26vh;
+    max-height: 26vh;
+    gap: 2.5vw;
+  }
+
+  .card {
+    min-width: 26vh;
+    max-width: 26vh;
+    max-height: 26vh;
+    min-height: 26vh;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .card2 {
+    max-width: 17vh;
+    min-width: 17vh;
+    min-height: 100%;
+    max-height: 100%;
+  }
+
+  .img {
+    max-width: 100%;
+    max-height: 15.5vh;
+  }
+
+  .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .play {
+    padding: 0;
+    position: relative;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    top: -28vh;
+    height: 31vh;
+
+  }
+
+  .playtext2 h4 {
+    font-size: 2.65vh;
+  }
+
+  .playtext2 i {
+    font-size: 2.9vh;
+  }
+
+  .text {
+    font-size: 2.1vw;
+  }
+
+  .text h4 {
+    font-size: 2.1vw;
+  }
+
+  .songcard {
+    min-height: 25vh;
+    gap: 2vw;
+  }
+
+  .playBtn {
+    position: absolute;
+    height: 21vh;
+    top: 90%;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+    z-index: 999;
+  }
+
+  .artists {
+    position: relative;
+    top: -2.7vh;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    height: 21vh;
+  }
+
+  .artists h4 {
+    font-size: 2.65vh;
+  }
+
+  .artists i {
+    font-size: 2.7vh;
+  }
+
+  .singerss {
+    min-height: 15vh;
+    max-height: 15vh;
+    overflow-x: auto;
+    gap: 2.8vh;
+  }
+
+  .singerdiv {
+    min-width: 30vh;
+    max-width: 30vh;
+  }
+
+  .artistsDiv1,
+  .artistsDiv2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 2vw;
+  }
+
+  .artistsDiv1 h4,
+  .artistsDiv2 h4 {
+    font-size: 2.4vw;
+  }
+
+  .img2 {
+    max-height: 10vh;
+    min-height: 10vh;
+    min-width: 10vh;
+    max-width: 10vh;
+  }
+
+  .img2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .text2 {
+    min-width: 18vh;
+  }
+
+  .songList {
+    position: absolute;
+    bottom: -32vh;
+    width: 66%;
+    height: 0%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    max-height: 82vh;
+    border-radius: 4vw;
+    overflow: hidden;
+    -webkit-transition: height 1.2s ease-in-out;
+    -o-transition: height 1.2s ease-in-out;
+    transition: height 1.2s ease-in-out;
+    z-index: 200;
+  }
+
+  .containerKasset {
+    display: none;
+  }
+
+  .songss {
+    left: 6vw;
+    margin-top: 2vw;
+  }
+
+  .songss span {
+    font-size: 3vh;
+    margin-right: 2vh;
+    color: rgb(49, 49, 49);
+  }
+
+  .songss i {
+    font-size: 3.2vh;
+    margin-top: 1vh;
+    color: rgb(112, 112, 112);
+  }
+
+  .songlistbg {
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    background-color: rgb(151, 151, 151);
+  }
+
+  .listItem {
+    height: 11.2vh;
+  }
+
+  .poster2 {
+    width: 10vh;
+    height: 10vh;
+    margin-left: 1vw;
+  }
+
+
+  .songDivs {
+    width: 100%;
+    height: 100%;
+    padding: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+  }
+
+  .albumName {
+    font-size: 2.6vh;
+  }
+
+  .btns {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 2vh;
+  }
+
+  .text3 {
+    position: relative;
+    top: -2vh;
+    margin-left: 2vh;
+  }
+
+  .text3 h4 {
+    font-size: 2.7vh;
+    margin-bottom: 1vh;
+  }
+
+  .btnsdiv i {
+    font-size: 4.7vh;
+  }
+
+  .text2 h4 {
+    font-size: 2.5vh;
+  }
+
+  .poster {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 18vh;
+    width: 17vh;
+    height: 17vh;
+    z-index: 999;
+  }
+
+  .uparrow {
+    position: absolute;
+    bottom: -42%;
+    color: rgb(165, 165, 165);
+    opacity: 1;
+    z-index: 90;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .close {
+    font-size: 3.2vh;
+    color: rgb(68, 68, 68);
+    z-index: 990;
+    right: 22vw;
+    bottom: 45.8%;
+    -webkit-transition: opacity 1.2s ease-in-out;
+    -o-transition: opacity 1.2s ease-in-out;
+    transition: opacity 1.2s ease-in-out;
+  }
+
+  .uparrow i {
+    font-size: 7.5vh;
+  }
+}
+
+@media only screen and (min-device-width : 636px) and (max-device-width : 734px) {
+  .sections {
+    width: 100vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    overflow-x: hidden;
+    height: 94vh;
+    border-radius: 0%;
+  }
+
+  .sections::-webkit-scrollbar {
+    display: none;
+  }
+
+  .AppName {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 4vh;
+    height: 12vh;
+    z-index: 56;
+  }
+
+  .logo {
+    width: 28vh;
+  }
+
+  .AppName h1 {
+    font-size: 6.5vh;
+  }
+
+  .AppName img{
+    max-width: 38vh;
+  }
+
+  .baars {
+    opacity: 1;
+    right: 6vw;
+    font-size: 5vw;
+    z-index: 20;
+    color: rgb(165, 165, 165);
+  }
+
+  .Follow {
+    color: rgb(179, 179, 179)
+  }
+
+  .moviename {
+    color: rgb(179, 179, 179);
+  }
+
+  .navi {
+    top: 12vh;
+    width: 45%;
+    right: 0;
+    position: absolute;
+    padding-top: 2vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 25vh 20.5vh 22.5vh;
+    grid-template-rows: 25vh 20.5vh 22.5vh;
+    height: 0%;
+    opacity: 0;
+    -webkit-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    -o-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    border-bottom-left-radius: 4vw;
+    border-bottom-right-radius: 4vw;
+    border-top-left-radius: 4vw;
+    max-height: 72vh;
+    z-index: 55;
+    background-color: #374151;
+    border: 1px solid gray;
+  }
+
+
+  .navi li {
+    font-size: 2.9vh;
+    padding-left: 35%;
+    color: rgb(165, 165, 165);
+  }
+
+  .navi h4 {
+    padding-left: 35%;
+    font-size: 2.25vh;
+    font-weight: bold;
+    color: rgb(194, 194, 194);
+  }
+
+  .cardsec {
+    position: relative;
+    -ms-grid-rows: 12vh 18vh 60vh 43vh;
+    grid-template-rows: 12vh 18vh 60vh 43vh;
+    padding: 0;
+    border: none;
+  }
+
+  .search {
+    padding-left: 1.1vw;
+    position: relative;
+    left: 3%;
+  }
+
+  .inputs {
+    width: 45vh;
+  }
+
+  .angles {
+    font-size: 4vw;
+  }
+
+  .mg {
+    font-size: 3vw;
+  }
+
+  .inputsbox {
+    width: 100%;
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-webkit-input-placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-moz-placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox:-ms-input-placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-ms-input-placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::placeholder {
+    font-size: 2.6vh;
+    padding-left: 1vw;
+  }
+
+  .BgDiv {
+    position: relative;
+    height: 17vh;
+    z-index: 1;
+  }
+
+  .BgDiv i {
+    font-size: 17vh;
+    z-index: 1;
+    left: -4vh;
+  }
+
+  .BgDiv h1 {
+    font-size: 6vh;
+    left: 5vh;
+    z-index: 2;
+  }
+
+  .playlist {
+    height: 32vh;
+    top: -1vh;
+    overflow-x: scroll;
+  }
+
+  .playtext h4 {
+    font-size: 2.7vh;
+  }
+
+  .playtext i {
+    font-size: 2.7vh;
+  }
+
+
+  .playlistBox {
+    min-height: 26vh;
+    max-height: 26vh;
+    gap: 2.5vw;
+  }
+
+  .card {
+    min-width: 26vh;
+    max-width: 26vh;
+    max-height: 26vh;
+    min-height: 26vh;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .card2 {
+    max-width: 15vh;
+    min-width: 15vh;
+    min-height: 100%;
+    max-height: 100%;
+  }
+
+  .img {
+    max-width: 100%;
+    max-height: 15.5vh;
+  }
+
+  .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .play {
+    padding: 0;
+    position: relative;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    top: -28vh;
+    height: 31vh;
+
+  }
+
+  .playtext2 h4 {
+    font-size: 2.65vh;
+  }
+
+  .playtext2 i {
+    font-size: 2.9vh;
+  }
+
+  .text h4 {
+    font-size: 2.1vh;
+  }
+
+  .songcard {
+    min-height: 25vh;
+    gap: 2vw;
+  }
+
+  .playBtn {
+    position: absolute;
+    height: 21vh;
+    top: 90%;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+    z-index: 999;
+  }
+
+  .artists {
+    position: relative;
+    top: -2.7vh;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    height: 21vh;
+  }
+
+  .artists h4 {
+    font-size: 2.65vh;
+  }
+
+  .artists i {
+    font-size: 2.7vh;
+  }
+
+  .singerss {
+    min-height: 15vh;
+    max-height: 15vh;
+    overflow-x: auto;
+    gap: 3vh;
+  }
+
+  .singerdiv {
+    min-width: 30vh;
+    max-width: 30vh;
+  }
+
+  .artistsDiv1,
+  .artistsDiv2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 2vw;
+  }
+
+  .artistsDiv1 h4,
+  .artistsDiv2 h4 {
+    font-size: 2.4vw;
+  }
+
+  .img2 {
+    max-height: 10vh;
+    min-height: 10vh;
+    min-width: 10vh;
+    max-width: 10vh;
+  }
+
+  .img2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .text2 {
+    min-width: 18vh;
+  }
+
+  .songList {
+    position: absolute;
+    bottom: -31vh;
+    width: 55%;
+    height: 0%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    max-height: 82vh;
+    border-radius: 4vw;
+    overflow: hidden;
+    -webkit-transition: height 1.2s ease-in-out;
+    -o-transition: height 1.2s ease-in-out;
+    transition: height 1.2s ease-in-out;
+    z-index: 200;
+  }
+
+  .containerKasset {
+    display: none;
+  }
+
+  .songss {
+    left: 6vw;
+    margin-top: 2vh;
+  }
+
+  .songss span {
+    font-size: 3vh;
+    margin-right: 2vh;
+    color: rgb(49, 49, 49);
+  }
+
+  .songss i {
+    font-size: 3.2vh;
+    margin-top: 1vh;
+    color: rgb(112, 112, 112);
+  }
+
+  .songlistbg {
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    background-color: rgb(151, 151, 151);
+  }
+
+  .listItem {
+    height: 11.2vh;
+  }
+
+  .poster2 {
+    width: 10vh;
+    height: 10vh;
+    margin-left: 1vw;
+  }
+
+
+  .songDivs {
+    width: 100%;
+    height: 100%;
+    padding: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+  }
+
+  .albumName {
+    font-size: 2.6vh;
+  }
+
+  .btns {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 2vh;
+  }
+
+  .text3 {
+    position: relative;
+    top: -2vh;
+    margin-left: 2vh;
+  }
+
+  .text3 h4 {
+    font-size: 2.7vh;
+    margin-bottom: 1vh;
+  }
+
+  .btnsdiv i {
+    font-size: 4.7vh;
+  }
+
+  .text2 h4 {
+    font-size: 2.5vh;
+  }
+
+  .poster {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 18vh;
+    width: 17vh;
+    height: 17vh;
+    z-index: 999;
+  }
+
+  .uparrow {
+    position: absolute;
+    bottom: -42%;
+    color: rgb(165, 165, 165);
+    opacity: 1;
+    z-index: 90;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .close {
+    font-size: 3.2vh;
+    color: rgb(68, 68, 68);
+    z-index: 990;
+    right: 28vw;
+    bottom: 46%;
+    -webkit-transition: opacity 1.2s ease-in-out;
+    -o-transition: opacity 1.2s ease-in-out;
+    transition: opacity 1.2s ease-in-out;
+  }
+
+  .uparrow i {
+    font-size: 7.5vh;
+  }
+}
+
+@media only screen and (min-device-width : 735px) and (max-device-width : 1024px) {
+  .sections {
+    height: 87vh;
+    -ms-grid-columns: 20vw 50vw 30vw;
+    grid-template-columns: 20vw 50vw 30vw;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+  .AppName h1 {
+    font-size: 2.8vw;
+  }
+
+  .BgDiv {
+    position: relative;
+    height: 15vh;
+    z-index: 1;
+  }
+
+  .BgDiv i {
+    font-size: 15vh;
+    z-index: 1;
+    left: -4vh;
+  }
+
+  .BgDiv h1 {
+    font-size: 6vh;
+    position: relative;
+    left: 3vh;
+  }
+
+  .Follow {
+    color: rgb(179, 179, 179)
+  }
+
+  .moviename {
+    color: rgb(179, 179, 179);
+  }
+
+  .navi {
+    -ms-grid-rows: 24vh 20vh 16vh;
+    grid-template-rows: 24vh 20vh 16vh;
+    max-height: 70vh;
+    min-height: 70vh;
+  }
+
+  .navi h4 {
+    font-size: 1.9vh;
+    color: rgb(194, 194, 194);
+  }
+
+  .navi li {
+    font-size: 2.63vh;
+    color: rgb(165, 165, 165);
+  }
+
+  .inputsbox {
+    font-size: 2.5vh;
+  }
+
+  .inputsbox::-webkit-input-placeholder {
+    font-size: 2.15vh;
+  }
+
+  .inputsbox::-moz-placeholder {
+    font-size: 2.15vh;
+  }
+
+  .inputsbox:-ms-input-placeholder {
+    font-size: 2.15vh;
+  }
+
+  .inputsbox::-ms-input-placeholder {
+    font-size: 2.15vh;
+  }
+
+  .inputsbox::placeholder {
+    font-size: 2.15vh;
+  }
+
+  .angles {
+    font-size: 2.2vw;
+    margin-left: 0.8vh;
+  }
+
+  .mg {
+    font-size: 1.8vw;
+  }
+
+  .cardsec {
+    min-height: 87vh;
+    max-height: 87vh;
+    overflow-y: scroll;
+    -ms-grid-rows: 10vh 15vh 33vh 35vh;
+    grid-template-rows: 10vh 15vh 33vh 35vh;
+  }
+
+  .playlist {
+    position: relative;
+    top: 0vh;
+    max-width: 100%;
+    height: 32vh;
+  }
+
+  .playlistBox {
+    min-height: 26vh;
+    max-height: 26vh;
+    gap: 1vw;
+  }
+
+  .card {
+    max-width: 26vh;
+    min-width: 26vh;
+    max-height: 26vh;
+    min-height: 26vh;
+  }
+
+  .play {
+    position: relative;
+    top: 0.5vh;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+
+  .playtext h4,
+  .playtext2 h4,
+  .artists h4,
+  .songss span,
+  .playtext i,
+  .playtext2 i,
+  .artists i,
+  .songss i {
+    font-size: 2.6vh;
+  }
+
+  .songss span {
+    margin-bottom: 1vw;
+    margin-left: 2vw;
+    margin-right: 1vw;
+    margin-top: 0.5vw;
+  }
+
+  .songcard {
+    min-height: 23vh;
+    max-height: 23vh;
+    overflow-y: hidden;
+  }
+
+  .card2 {
+    max-width: 15vh;
+    min-width: 15vh;
+    max-height: 100%;
+    min-height: 100%;
+  }
+
+  .text h4 {
+    font-size: 2.2vh;
+  }
+
+  .artists {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    max-height: 11vh;
+    min-height: 11vh;
+    position: relative;
+    top: -5vh;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .singerss {
+    min-height: 15vh;
+    max-height: 15vh;
+    overflow-x: auto;
+    gap: 2vh;
+  }
+
+  .singerdiv {
+    min-width: 30vh;
+    max-width: 30vh;
+  }
+
+  .artistsDiv1,
+  .artistsDiv2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .text2 {
+    min-width: 10vw;
+  }
+
+  .text2 h4 {
+    font-size: 2.vh;
+  }
+
+  .img {
+    max-width: 100%;
+    max-height: 10vw;
+  }
+
+  .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .img2 {
+    max-height: 9vh;
+    min-height: 9vh;
+    min-width: 9vh;
+    max-width: 9vh;
+  }
+
+  .img2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .btns {
+    width: 7vh;
+    height: 7vh;
+  }
+
+  .btnsdiv i {
+    font-size: 4.4vh;
+  }
+
+  .poster {
+    position: relative;
+    bottom: 5.5vw;
+    width: 15vh;
+    height: 15vh;
+    left: 5.5vw;
+  }
+
+  .songlistbg {
+    top: 6vh;
+  }
+
+  .listItem {
+    height: 10vh;
+  }
+
+  .poster2 {
+    width: 8vh;
+    height: 8vh;
+    margin-left: 1vh;
+  }
+
+  .kasset {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .containerKasset {
+    top: 1.8vw;
+  }
+
+  .containerKasset h4 {
+    font-size: 1.5vw;
+  }
+
+  .songDivs {
+    margin: 0 auto;
+  }
+
+}
+
+@media only screen and (min-device-width : 735px) and (max-device-width : 869px) {
+  .albumName {
+    font-size: 2vh;
+  }
+
+  .text3 {
+    position: relative;
+    bottom: 0.6vw;
+  }
+
+  .text3 h4 {
+    margin-bottom: 0.2vw;
+    font-size: 2vh;
+  }
+}
+
+@media only screen and (min-device-width : 870px) and (max-device-width : 1024px) {
+  .albumName {
+    font-size: 2.25vh;
+  }
+
+  .text3 {
+    position: relative;
+    bottom: 0.5vh;
+  }
+
+  .text3 h4 {
+    margin-bottom: 0.3vh;
+    font-size: 2.25vh;
+  }
+}
+
+@media only screen and (min-device-width : 1025px) and (max-device-width : 1365px) {
+  .sections {
+    height: 85vh;
+    -ms-grid-columns: 20vw 50vw 30vw;
+    grid-template-columns: 20vw 50vw 30vw
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+  .AppName h1 {
+    font-size: 2.8vw;
+  }
+
+  .BgDiv {
+    position: relative;
+    height: 18vh;
+    z-index: 1;
+    top: 7vh;
+  }
+
+  .BgDiv i {
+    font-size: 18vh;
+    z-index: 1;
+    left: -7vh;
+  }
+
+  .BgDiv h1 {
+    font-size: 6vh;
+    position: relative;
+    left: 2vh;
+  }
+
+  .Follow {
+    color: rgb(179, 179, 179)
+  }
+
+  .moviename {
+    color: rgb(179, 179, 179);
+  }
+
+  .navi {
+    -ms-grid-rows: 24vh 20vh 16vh;
+    grid-template-rows: 24vh 20vh 16vh;
+    max-height: 70vh;
+    min-height: 70vh;
+  }
+
+  .navi h4 {
+    font-size: 1.9vh;
+    color: rgb(194, 194, 194);
+  }
+
+  .navi li {
+    font-size: 2.63vh;
+    color: rgb(165, 165, 165);
+  }
+
+  .search {
+    position: relative;
+    top: 3vh;
+  }
+
+  .inputsbox {
+    font-size: 2.5vh;
+  }
+
+  .inputsbox::-webkit-input-placeholder {
+    font-size: 2.1vh;
+  }
+
+  .inputsbox::-moz-placeholder {
+    font-size: 2.1vh;
+  }
+
+  .inputsbox:-ms-input-placeholder {
+    font-size: 2.1vh;
+  }
+
+  .inputsbox::-ms-input-placeholder {
+    font-size: 2.1vh;
+  }
+
+  .inputsbox::placeholder {
+    font-size: 2.1vh;
+  }
+
+  .angles {
+    font-size: 2.2vw;
+    margin-left: 0.8vh;
+  }
+
+  .mg {
+    font-size: 1.8vw;
+  }
+
+  .cardsec {
+    /* grid-template-rows: 10vh 10vh 5vh 5vh; */
+    overflow-y: auto;
+  }
+
+  .angles {
+    font-size: 2vw;
+  }
+
+  .mg {
+    font-size: 1.5vw;
+  }
+
+  .playlist {
+    max-height: 31vh;
+    min-height: 31vh;
+    max-width: 100%;
+    top: 8vh;
+  }
+
+  .play {
+    position: relative;
+    top: 5vh;
+    min-height: 52vh;
+    max-height: 52vh;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    max-width: 100%;
+  }
+
+  .playlistBox {
+    max-height: 25vh;
+    min-height: 25vh;
+    gap: 1.2vw;
+  }
+
+  .playtext h4,
+  .playtext2 h4,
+  .artists h4,
+  .songss span,
+  .playtext i,
+  .playtext2 i,
+  .artists i,
+  .songss i {
+    font-size: 2.5vh;
+  }
+
+  .songss span {
+    margin-bottom: 1vw;
+    margin-left: 1.6vw;
+    margin-right: 1vw;
+    margin-top: 0.5vw;
+  }
+
+  .songcard {
+    min-height: 26vh;
+    max-height: 26vh;
+  }
+
+  .card {
+    max-width: 25vh;
+    min-width: 25vh;
+    max-height: 25vh;
+    min-height: 25vh;
+  }
+
+  .card2 {
+    max-width: 17vh;
+    min-width: 17vh;
+    max-height: 100%;
+    min-height: 100%;
+  }
+
+  .text {
+    font-size: 1.2vh;
+  }
+
+  .text h4 {
+    font-size: 2.3vh;
+  }
+
+  .text2 h4 {
+    font-size: 2.3vh;
+  }
+
+  .text4 span {
+    font-size: 2.3vh;
+  }
+
+  .img {
+    max-width: 100%;
+    max-height: 17.5vh;
+    min-height: 12.5vh;
+  }
+
+  .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .img2 {
+    max-height: 8vh;
+    min-height: 8vh;
+    min-width: 8vh;
+    max-width: 8vh;
+  }
+
+  .img2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .singerss {
+    min-height: 15vh;
+    max-height: 15vh;
+    padding-top: 2vh;
+    overflow-y: auto;
+  }
+
+  .listItem {
+    height: 10vh;
+  }
+
+  .poster {
+    position: relative;
+    bottom: 12vh;
+  }
+
+  .poster2 {
+    width: 4vw;
+    height: 4vw;
+    margin-left: 0.5vw;
+  }
+
+  .albumName {
+    font-size: 1.1vw;
+  }
+
+  .text3 {
+    position: relative;
+    /* bottom: 0.1vh; */
+  }
+
+  .text3 h4 {
+    margin-bottom: 1.2vh;
+    font-size: 2.3vh;
+  }
+
+  .btns {
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .btnsdiv {
+    bottom: 2vh;
+  }
+
+  .btnsdiv i {
+    font-size: 5vh;
+  }
+
+  .songlistbg {
+    top: 3vw;
+  }
+
+  .kasset {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .containerKasset h4 {
+    font-size: 1.2vw;
+  }
+
+  .artists {
+    top: -1vh;
+  }
+
+  .artistsDiv1,
+  .artistsDiv2 {
+    gap: 1vh;
+    margin-left: 1vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .singerdiv {
+    /* top: 20vh; */
+    max-width: 25vh;
+    min-width: 25vh;
+  }
+}
+@media only screen and (min-device-width : 1367px) and (max-device-width : 1440px) {
+  .sections {
+    height: 85vh;
+    -ms-grid-columns: 20vw 50vw 30vw;
+    grid-template-columns: 20vw 50vw 30vw
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+  .AppName h1 {
+    font-size: 2.8vw;
+  }
+
+  .BgDiv {
+    position: relative;
+    height: 18vh;
+    z-index: 1;
+    top: 7vh;
+  }
+
+  .BgDiv i {
+    font-size: 18vh;
+    z-index: 1;
+    left: -7vh;
+  }
+
+  .BgDiv h1 {
+    font-size: 6vh;
+    position: relative;
+    left: 2vh;
+  }
+
+  .Follow {
+    color: rgb(179, 179, 179)
+  }
+
+  .moviename {
+    color: rgb(179, 179, 179);
+  }
+
+  .navi {
+    -ms-grid-rows: 24vh 20vh 16vh;
+    grid-template-rows: 24vh 20vh 16vh;
+    max-height: 70vh;
+    min-height: 70vh;
+  }
+
+  .navi h4 {
+    font-size: 1.9vh;
+    color: rgb(194, 194, 194);
+  }
+
+  .navi li {
+    font-size: 2.63vh;
+    color: rgb(165, 165, 165);
+  }
+
+  .search {
+    position: relative;
+    top: 3vh;
+  }
+
+  .inputsbox {
+    font-size: 2.5vh;
+  }
+
+  .inputsbox::-webkit-input-placeholder {
+    font-size: 2.1vh;
+  }
+
+  .inputsbox::-moz-placeholder {
+    font-size: 2.1vh;
+  }
+
+  .inputsbox:-ms-input-placeholder {
+    font-size: 2.1vh;
+  }
+
+  .inputsbox::-ms-input-placeholder {
+    font-size: 2.1vh;
+  }
+
+  .inputsbox::placeholder {
+    font-size: 2.1vh;
+  }
+
+  .angles {
+    font-size: 2.2vw;
+    margin-left: 0.8vh;
+  }
+
+  .mg {
+    font-size: 1.8vw;
+  }
+
+  .cardsec {
+    overflow-y: auto;
+  }
+
+  .angles {
+    font-size: 2vw;
+  }
+
+  .mg {
+    font-size: 1.5vw;
+  }
+
+  .playlist {
+    max-height: 31vh;
+    min-height: 31vh;
+    max-width: 100%;
+    top: 8vh;
+  }
+
+  .play {
+    position: relative;
+    top: 5vh;
+    min-height: 52vh;
+    max-height: 52vh;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    max-width: 100%;
+  }
+
+  .playlistBox {
+    max-height: 25vh;
+    min-height: 25vh;
+    gap: 1.2vw;
+  }
+
+  .playtext h4,
+  .playtext2 h4,
+  .artists h4,
+  .songss span,
+  .playtext i,
+  .playtext2 i,
+  .artists i,
+  .songss i {
+    font-size: 2.5vh;
+  }
+
+  .songss span {
+    margin-bottom: 1vw;
+    margin-left: 1.6vw;
+    margin-right: 1vw;
+    margin-top: 0.5vw;
+  }
+
+  .songcard {
+    min-height: 26vh;
+    max-height: 26vh;
+  }
+
+  .card {
+    max-width: 25vh;
+    min-width: 25vh;
+    max-height: 25vh;
+    min-height: 25vh;
+  }
+
+  .card2 {
+    max-width: 17vh;
+    min-width: 17vh;
+    max-height: 100%;
+    min-height: 100%;
+  }
+
+  .text {
+    font-size: 1.2vh;
+  }
+
+  .text h4 {
+    font-size: 2.3vh;
+  }
+
+  .text2 h4 {
+    font-size: 2.3vh;
+  }
+
+  .text4 span {
+    font-size: 2.3vh;
+  }
+
+  .img {
+    max-width: 100%;
+    max-height: 17.5vh;
+    min-height: 12.5vh;
+  }
+
+  .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .img2 {
+    max-height: 8vh;
+    min-height: 8vh;
+    min-width: 8vh;
+    max-width: 8vh;
+  }
+
+  .img2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .singerss {
+    min-height: 15vh;
+    max-height: 15vh;
+    padding-top: 2vh;
+    overflow-y: auto;
+  }
+
+  .listItem {
+    height: 10vh;
+  }
+
+  .poster {
+    position: relative;
+    bottom: 12vh;
+  }
+
+  .poster2 {
+    width: 4vw;
+    height: 4vw;
+    margin-left: 0.5vw;
+  }
+
+  .albumName {
+    font-size: 1.1vw;
+  }
+
+  .text3 {
+    position: relative;
+  }
+
+  .text3 h4 {
+    margin-bottom: 1.2vh;
+    font-size: 2.3vh;
+  }
+
+  .btns {
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .btnsdiv {
+    bottom: 2vh;
+  }
+
+  .btnsdiv i {
+    font-size: 5vh;
+  }
+
+  .songlistbg {
+    top: 3vw;
+  }
+
+  .kasset {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .containerKasset h4 {
+    font-size: 1.2vw;
+  }
+
+  .artists {
+    top: -1vh;
+  }
+
+  .artistsDiv1,
+  .artistsDiv2 {
+    gap: 1vh;
+    margin-left: 1vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .singerdiv {
+    max-width: 25vh;
+    min-width: 25vh;
+  }
+}
+@media only screen and (min-device-width : 1441px) and (max-device-width : 2560px) {
+  .sections {
+    -ms-grid-columns: 20vw 50vw 30vw;
+    grid-template-columns: 20vw 50vw 30vw;
+  }
+
+  .navi {
+    -ms-grid-rows: 27vh 20vh 21vh;
+    grid-template-rows: 27vh 20vh 21vh;
+    max-height: 66vh;
+    min-height: 72vh;
+  }
+
+  .navi li {
+    font-size: 2.8vh;
+    color: rgb(165, 165, 165);
+  }
+
+  .navi h4 {
+    font-size: 2.1vh;
+    color: rgb(194, 194, 194);
+  }
+
+  .logo {
+    width: 65%;
+  }
+
+  .AppName h1 {
+    font-size: 2.6vw;
+  }
+
+  .poster {
+    position: relative;
+    bottom: 8vh;
+    width: 16vh;
+    height: 16vh;
+    left: 7vw;
+    border-radius: 1.2vh;
+  }
+
+  .cardsec {
+    -ms-grid-rows: 9vh 18vh 29vh 27vh;
+    grid-template-rows: 9vh 18vh 29vh 27vh;
+  }
+
+  .inputs {
+    border-radius: 1vh;
+    padding: 0.9vh;
+  }
+
+  .inputsbox {
+    font-size: 2.5vh;
+  }
+
+  .inputsbox::-webkit-input-placeholder {
+    font-size: 2.3vh;
+  }
+
+  .inputsbox::-moz-placeholder {
+    font-size: 2.3vh;
+  }
+
+  .inputsbox:-ms-input-placeholder {
+    font-size: 2.3vh;
+  }
+
+  .inputsbox::-ms-input-placeholder {
+    font-size: 2.3vh;
+  }
+
+  .inputsbox::placeholder {
+    font-size: 2.3vh;
+  }
+
+  .angles {
+    font-size: 3.3vh;
+  }
+
+  .Follow {
+    color: rgb(179, 179, 179)
+  }
+
+  .moviename {
+    color: rgb(179, 179, 179);
+  }
+
+  .mg {
+    font-size: 2.5vh;
+  }
+
+  .BgDiv {
+    position: relative;
+    height: 16vh;
+    z-index: 1;
+  }
+
+  .BgDiv i {
+    font-size: 16vh;
+    z-index: 1;
+    left: -5vh;
+  }
+
+  .BgDiv h1 {
+    font-size: 6vh;
+    position: relative;
+    left: 3vh;
+  }
+
+  .Follow {
+    color: rgb(179, 179, 179);
+  }
+
+  .playlist {
+    height: 10vh;
+    max-width: 100%;
+    top: -2vh;
+  }
+
+  .playlistBox {
+    max-height: 25vh;
+    min-height: 25vh;
+    gap: 1vw;
+  }
+
+  .card {
+    max-width: 25vh;
+    min-width: 25vh;
+    border-radius: 1vw;
+    max-height: 100%;
+    min-height: 100%;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .play {
+    padding: 0;
+    position: relative;
+    -ms-grid-columns: 60% 40%;
+    grid-template-columns: 60% 40%;
+    top: 0vh;
+    min-height: 27vh;
+    max-height: 27vh;
+  }
+
+  .songcard {
+    gap: 1vw;
+  }
+
+  .card2 {
+    max-width: 15vh;
+    min-width: 15vh;
+    max-height: 100%;
+    min-height: 100%;
+  }
+
+  .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .btns {
+    width: 7vh;
+    height: 7vh;
+  }
+
+  .btnsdiv {
+    bottom: 3vh;
+  }
+
+  .btnsdiv i {
+    font-size: 4.5vh;
+  }
+
+  .listItem {
+    height: 11vh;
+    gap: 1vw;
+    margin-bottom: 0.3vw;
+    border-radius: 0.5vw;
+  }
+
+  .text {
+    font-size: 2.2vh;
+  }
+
+  .moviename {
+    font-size: 2.1vh;
+  }
+
+  .text4 {
+    font-size: 1vw;
+  }
+
+  .songlistbg {
+    top: 11vh;
+  }
+
+  .albumName {
+    font-size: 1vw;
+  }
+
+  .text3 h4 {
+    margin-bottom: 1vw;
+    font-size: 2.6vh;
+  }
+
+  .poster2 {
+    width: 4vw;
+    height: 4vw;
+    margin-left: 0.5vw;
+    border-radius: 0.5vw;
+  }
+
+  .songss span {
+    margin-left: 1.5vw;
+  }
+
+  .text2 {
+    min-width: 15vh;
+  }
+
+  .text2 h4 {
+    font-size: 2vh;
+  }
+
+  .singerss {
+    padding-top: 0.5vw;
+  }
+
+  .singerdiv {
+    gap: 2vh;
+    min-width: 30vh;
+    max-width: 30vh;
+  }
+
+  .playtext h4,
+  .playtext2 h4,
+  .artists h4,
+  .songss span,
+  .playtext i,
+  .playtext2 i,
+  .artists i,
+  .songss i {
+    font-size: 2.6vh;
+  }
+
+  .containerKasset h4 {
+    font-size: 2.7vh;
+    margin-left: 1vh;
+  }
+
+}
+
+@media only screen and (min-device-width : 1441px) and (max-device-width : 2208px) {
+  .poster {
+    position: relative;
+    bottom: 8vh;
+    width: 15vh;
+    height: 15vh;
+    left: 7vw;
+    border-radius: 1.2vh;
+  }
+
+  .text3 span {
+    font-size: 2.3vh;
+  }
+
+  .text4 span {
+    font-size: 2.3vh;
+  }
+}
+
+
+

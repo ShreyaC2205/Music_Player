@@ -552,6 +552,453 @@
     font-size: 7vh;
   }
 }
+@media (orientation: portrait) and (max-aspect-ratio: 21/9) {
+  .sections {
+    width: 100vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    overflow-x: hidden;
+    height: 82vh;
+    border-radius: 0%;
+  }
+
+  .sections::-webkit-scrollbar {
+    display: none;
+  }
+
+  .AppName {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 3vh;
+    height: 10vh;
+    z-index: 56;
+  }
+
+  .AppName h1 {
+    font-size: 5.5vh;
+  }
+  .AppName img{
+    max-width: 28vh;
+  }
+  .baars {
+    opacity: 1;
+    right: 4vh;
+    font-size: 5.5vh;
+    z-index: 20;
+    color: rgb(165, 165, 165);
+  }
+
+  .navi {
+    top: 10vh;
+    width: 100%;
+    position: absolute;
+    padding-top: 3.5vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 23vh 20vh 22vh;
+    grid-template-rows: 23vh 20vh 22vh;
+    height: 0%;
+    opacity: 0;
+    -webkit-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    -o-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    max-height: 70vh;
+    z-index: 55;
+    background-color: #374151;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+  }
+
+
+  .navi li {
+    font-size: 2.7vh;
+    padding-left: 36vw;
+    color: rgb(165, 165, 165);
+    margin-bottom: 1vh;
+  }
+
+  .navi h4 {
+    padding-left: 36vw;
+    font-size: 2vh;
+    font-weight: bold;
+    color: rgb(194, 194, 194);
+  }
+
+  .cardsec {
+    position: relative;
+    -ms-grid-rows: 10vh 18vh 50vh 29vh;
+    grid-template-rows: 10vh 18vh 50vh 29vh;
+    padding: 0;
+    border: none;
+
+  }
+
+  .search {
+    padding-left: 1.1vw;
+    position: relative;
+    left: 3%;
+  }
+
+  .inputs {
+    width: 35vh;
+  }
+
+  .angles {
+    font-size: 5.5vw;
+  }
+
+  .mg {
+    font-size: 4vw;
+  }
+
+  .inputsbox {
+    width: 100%;
+    font-size: 2.5vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-webkit-input-placeholder {
+    font-size: 2vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-moz-placeholder {
+    font-size: 2vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox:-ms-input-placeholder {
+    font-size: 2vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-ms-input-placeholder {
+    font-size: 2vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::placeholder {
+    font-size: 2vh;
+    padding-left: 1vw;
+  }
+
+  .BgDiv {
+
+    height: 15.5vh;
+    z-index: 1;
+  }
+
+  .BgDiv i {
+    position: relative;
+    font-size: 15.5vh;
+    z-index: 1;
+    left: -5vh;
+  }
+
+  .BgDiv h1 {
+    font-size: 6vh;
+    left: 3vh;
+    z-index: 2;
+  }
+
+  .playlist {
+    position: relative;
+    height: 27vh;
+    top: -2.4vh;
+    overflow: visible;
+  }
+
+  .playtext h4 {
+    font-size: 2.6vh;
+  }
+
+  .playtext i {
+    font-size: 2.6vh;
+  }
+
+
+  .playlistBox {
+    min-height: 21vh;
+    max-height: 21vh;
+    gap: 2vh;
+  }
+
+  .card {
+    min-width: 21vh;
+    max-width: 21vh;
+    max-height: 21vh;
+    min-height: 21vh;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .card2 {
+    max-width: 14vh;
+    min-width: 14vh;
+    max-height: 100%;
+    min-height: 100%;
+
+  }
+
+  .img {
+    max-width: 100%;
+    max-height: 14.5vh;
+  }
+
+  .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .play {
+    padding: 0;
+    position: relative;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    top: -25vh;
+  }
+
+  .playtext2 h4 {
+    font-size: 2.6vh;
+  }
+
+  .playtext2 i {
+    font-size: 2.6vh;
+  }
+
+  .text {
+    font-size: 5vh;
+  }
+
+  .text h4 {
+    font-size: 2vh;
+  }
+
+  .songcard {
+    min-height: 23vh;
+  }
+
+  .playBtn {
+    position: absolute;
+    height: 20vh;
+    top: 80%;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+    z-index: 999;
+  }
+
+  .artists {
+    position: relative;
+    top: -5vh;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+
+  .artists h4 {
+    font-size: 2.6vh;
+  }
+
+  .artists i {
+    font-size: 2.6vh;
+  }
+
+  .singerss {
+    min-height: 15vh;
+    max-height: 15vh;
+    overflow-x: auto;
+    gap: 3vh;
+  }
+
+  .artistsDiv1,
+  .artistsDiv2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 4vw;
+  }
+
+  .img2 {
+    max-height: 10vh;
+    min-height: 10vh;
+    min-width: 10vh;
+    max-width: 10vh;
+  }
+
+  .img2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .text2 {
+    min-width: 15vh;
+
+  }
+
+  .songList {
+    position: absolute;
+    bottom: -30vh;
+    width: 100%;
+    height: 0%;
+    max-height: 72vh;
+    border-radius: 4vw;
+    overflow: hidden;
+    -webkit-transition: height 1.2s ease-in-out;
+    -o-transition: height 1.2s ease-in-out;
+    transition: height 1.2s ease-in-out;
+    z-index: 200;
+  }
+
+  .Follow {
+    color: rgb(179, 179, 179)
+  }
+
+  .containerKasset {
+    display: none;
+  }
+
+  .songss {
+    left: 6vw;
+    margin-top: 2vw;
+  }
+
+  .songss span {
+    font-size: 2.7vh;
+    margin-right: 2vw;
+    color: rgb(49, 49, 49);
+  }
+
+  .songss i {
+    font-size: 2.7vh;
+    color: rgb(112, 112, 112);
+  }
+
+  .songlistbg {
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    background-color: rgb(151, 151, 151);
+  }
+
+  .singerdiv {
+    min-width: 25vh;
+    max-width: 25vh;
+  }
+
+  .listItem {
+    height: 10vh;
+  }
+
+  .poster2 {
+    width: 8vh;
+    height: 8vh;
+    margin-left: 2vw;
+  }
+
+
+  .songDivs {
+    width: 100%;
+    height: 100%;
+    padding: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+  }
+
+  .albumName {
+    font-size: 3.5vw;
+  }
+
+  .moviename {
+    color: rgb(179, 179, 179);
+  }
+
+  .btns {
+    width: 7vh;
+    height: 7vh;
+    border-radius: 2vw;
+  }
+
+  .text3 {
+    position: relative;
+    top: -2vh;
+    margin-left: 2vw;
+  }
+
+  .text3 h4 {
+    font-size: 3.8vw;
+    margin-bottom: 1vw;
+  }
+
+  .text2 h4 {
+    font-size: 2.3vh;
+  }
+
+  .btnsdiv i {
+    font-size: 4.5vh;
+  }
+
+  .poster {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 15vh;
+    width: 14vh;
+    height: 14vh;
+    z-index: 999;
+  }
+
+  .uparrow {
+    bottom: -38vh;
+    color: rgb(165, 165, 165);
+    opacity: 1;
+    z-index: 90;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .close {
+    font-size: 3vh;
+    color: rgb(68, 68, 68);
+    z-index: 990;
+    right: 6%;
+    bottom: 36vh;
+    -webkit-transition: opacity 1.2s ease-in-out;
+    -o-transition: opacity 1.2s ease-in-out;
+    transition: opacity 1.2s ease-in-out;
+  }
+
+  .uparrow i {
+    font-size: 7vh;
+  }
+}
 
 @media only screen and (min-device-width : 376px) and (max-device-width : 425px) {
   .sections {

@@ -18,14 +18,14 @@ var expand = 0
 // var expand3 = 1
 var isExpanded = false;
 
-bars.addEventListener("click", function(){
-    if(expand === 0){
+bars.addEventListener("click", function () {
+    if (expand === 0) {
         // ExploreContainer.style.height = "0%";
         navi.style.height = "0%";
         navi.style.opacity = 0;
         expand = 1;
     }
-    else{
+    else {
         // ExploreContainer.style.height = "100%";
         navi.style.height = "100%";
         navi.style.opacity = 1;
@@ -33,15 +33,15 @@ bars.addEventListener("click", function(){
     }
 })
 
-uparrow.addEventListener("click", function(){
+uparrow.addEventListener("click", function () {
     if (!isExpanded) {
-        songList.style.height = "95%";
+        songList.style.height = "100%";
         isExpanded = true;
         close.style.opacity = 1;
     }
 })
 
-close.addEventListener("click", function(){
+close.addEventListener("click", function () {
     if (isExpanded) {
         songList.style.height = "0%";
         isExpanded = false;
@@ -58,7 +58,6 @@ function updateCloseOpacity() {
 }
 updateCloseOpacity();
 
-// Listen for window resize events
 window.addEventListener("resize", updateCloseOpacity);
 
 var audio = new Audio()
@@ -72,7 +71,7 @@ function playSong() {
     arr.forEach(function (element, idx) {
         clutter += `<div class="listItem w-full h-[10vh] bg-gray-500 rounded-md flex items-center gap-2 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... cursor-pointer" id = ${idx}>
     <img class="h-[7vh] w-[7vh] rounded-md ml-[0.45vw] poster2" src="${element.img}" alt="">
-    <div class="text4 w-[70%] h-[3vw] bg-transparent grid grid-cols-[60%_30%_10%] flex text-gray-300 text-xs items-center pointer-events-none">
+    <div class="text4 w-[70%] h-[3vw] bg-transparent grid grid-cols-[60%_30%_10%] text-gray-300 text-xs items-center pointer-events-none">
         <div class="text3 bg-transparent">
             <h4 class="bg-transparent text-[2.1vh]">${element.songName}</h4>
             <span class="albumName bg-transparent text-[2vh]">${element.albumName}</span>

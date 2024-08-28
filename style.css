@@ -1,6 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  overflow-y: hidden;
+}
 
 * {
   padding: 0;
@@ -40,8 +51,8 @@
 }
 
 .forward:hover {
-  background: -webkit-gradient(linear, right top, left top, from(#fbff1a), color-stop(10%, #ff8818), to(#ff3131));
   background: -o-linear-gradient(right, #fbff1a, #ff8818 10%, #ff3131 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#fbff1a), color-stop(10%, #ff8818), to(#ff3131));
   background: linear-gradient(to left, #fbff1a, #ff8818 10%, #ff3131 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -50,8 +61,8 @@
 }
 
 .playy:hover {
-  background: -webkit-gradient(linear, right top, left top, from(#fbff1a), color-stop(10%, #ff8818), to(#ff3131));
   background: -o-linear-gradient(right, #fbff1a, #ff8818 10%, #ff3131 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#fbff1a), color-stop(10%, #ff8818), to(#ff3131));
   background: linear-gradient(to left, #fbff1a, #ff8818 10%, #ff3131 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -60,8 +71,8 @@
 }
 
 .backward:hover {
-  background: -webkit-gradient(linear, right top, left top, from(#fbff1a), color-stop(10%, #ff8818), to(#ff3131));
   background: -o-linear-gradient(right, #fbff1a, #ff8818 10%, #ff3131 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#fbff1a), color-stop(10%, #ff8818), to(#ff3131));
   background: linear-gradient(to left, #fbff1a, #ff8818 10%, #ff3131 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -104,6 +115,10 @@
   font-size: 2vh;
 }
 
+.btnsdiv{
+  gap: 2vh;
+}
+
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 375px) {
   .sections {
@@ -136,9 +151,11 @@
   .AppName h1 {
     font-size: 5.5vh;
   }
-  .AppName img{
+
+  .AppName img {
     max-width: 28vh;
   }
+
   .baars {
     opacity: 1;
     right: 4vh;
@@ -245,7 +262,6 @@
   }
 
   .BgDiv {
-
     height: 15.5vh;
     z-index: 1;
   }
@@ -269,7 +285,15 @@
     top: -2.4vh;
     overflow: visible;
   }
-
+  .artiststext{
+    margin-right: 1vh;
+  }
+  .playtext2{
+    margin-right: 1vh;
+  }
+  .playtext{
+    margin-right: 1vh;
+  }
   .playtext h4 {
     font-size: 2.6vh;
   }
@@ -509,7 +533,9 @@
   .text2 h4 {
     font-size: 2.3vh;
   }
-
+  .btnsdiv {
+    gap: 1.5vh;
+  }
   .btnsdiv i {
     font-size: 4.5vh;
   }
@@ -527,8 +553,9 @@
   }
 
   .uparrow {
-    bottom: -38vh;
-    color: rgb(165, 165, 165);
+    position: fixed;
+    bottom: 25%;
+    color: rgb(204, 204, 204);
     opacity: 1;
     z-index: 90;
     left: 50%;
@@ -552,455 +579,10 @@
     font-size: 7vh;
   }
 }
-@media (orientation: portrait) and (max-aspect-ratio: 21/9) {
-  .sections {
-    width: 100vw;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: none;
-    grid-template-columns: none;
-    overflow-x: hidden;
-    height: 82vh;
-    border-radius: 0%;
-  }
 
-  .sections::-webkit-scrollbar {
-    display: none;
-  }
-
-  .AppName {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-left: 3vh;
-    height: 10vh;
-    z-index: 56;
-  }
-
-  .AppName h1 {
-    font-size: 5.5vh;
-  }
-  .AppName img{
-    max-width: 28vh;
-  }
-  .baars {
-    opacity: 1;
-    right: 4vh;
-    font-size: 5.5vh;
-    z-index: 20;
-    color: rgb(165, 165, 165);
-  }
-
-  .navi {
-    top: 10vh;
-    width: 100%;
-    position: absolute;
-    padding-top: 3.5vw;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 23vh 20vh 22vh;
-    grid-template-rows: 23vh 20vh 22vh;
-    height: 0%;
-    opacity: 0;
-    -webkit-transition: height 1.5s ease-out, opacity 1.5s ease-out;
-    -o-transition: height 1.5s ease-out, opacity 1.5s ease-out;
-    transition: height 1.5s ease-out, opacity 1.5s ease-out;
-    border-bottom-left-radius: 5vw;
-    border-bottom-right-radius: 5vw;
-    max-height: 70vh;
-    z-index: 55;
-    background-color: #374151;
-    border-bottom: 1px solid gray;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-  }
-
-
-  .navi li {
-    font-size: 2.7vh;
-    padding-left: 36vw;
-    color: rgb(165, 165, 165);
-    margin-bottom: 1vh;
-  }
-
-  .navi h4 {
-    padding-left: 36vw;
-    font-size: 2vh;
-    font-weight: bold;
-    color: rgb(194, 194, 194);
-  }
-
-  .cardsec {
-    position: relative;
-    -ms-grid-rows: 10vh 18vh 50vh 29vh;
-    grid-template-rows: 10vh 18vh 50vh 29vh;
-    padding: 0;
-    border: none;
-
-  }
-
-  .search {
-    padding-left: 1.1vw;
-    position: relative;
-    left: 3%;
-  }
-
-  .inputs {
-    width: 35vh;
-  }
-
-  .angles {
-    font-size: 5.5vw;
-  }
-
-  .mg {
-    font-size: 4vw;
-  }
-
-  .inputsbox {
-    width: 100%;
-    font-size: 2.5vh;
-    padding-left: 1vw;
-  }
-
-  .inputsbox::-webkit-input-placeholder {
-    font-size: 2vh;
-    padding-left: 1vw;
-  }
-
-  .inputsbox::-moz-placeholder {
-    font-size: 2vh;
-    padding-left: 1vw;
-  }
-
-  .inputsbox:-ms-input-placeholder {
-    font-size: 2vh;
-    padding-left: 1vw;
-  }
-
-  .inputsbox::-ms-input-placeholder {
-    font-size: 2vh;
-    padding-left: 1vw;
-  }
-
-  .inputsbox::placeholder {
-    font-size: 2vh;
-    padding-left: 1vw;
-  }
-
-  .BgDiv {
-
-    height: 15.5vh;
-    z-index: 1;
-  }
-
-  .BgDiv i {
-    position: relative;
-    font-size: 15.5vh;
-    z-index: 1;
-    left: -5vh;
-  }
-
-  .BgDiv h1 {
-    font-size: 6vh;
-    left: 3vh;
-    z-index: 2;
-  }
-
-  .playlist {
-    position: relative;
-    height: 27vh;
-    top: -2.4vh;
-    overflow: visible;
-  }
-
-  .playtext h4 {
-    font-size: 2.6vh;
-  }
-
-  .playtext i {
-    font-size: 2.6vh;
-  }
-
-
-  .playlistBox {
-    min-height: 21vh;
-    max-height: 21vh;
-    gap: 2vh;
-  }
-
-  .card {
-    min-width: 21vh;
-    max-width: 21vh;
-    max-height: 21vh;
-    min-height: 21vh;
-  }
-
-  .card img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-
-  .card2 {
-    max-width: 14vh;
-    min-width: 14vh;
-    max-height: 100%;
-    min-height: 100%;
-
-  }
-
-  .img {
-    max-width: 100%;
-    max-height: 14.5vh;
-  }
-
-  .img img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: top;
-    object-position: top;
-  }
-
-  .play {
-    padding: 0;
-    position: relative;
-    -ms-grid-columns: none;
-    grid-template-columns: none;
-    top: -25vh;
-  }
-
-  .playtext2 h4 {
-    font-size: 2.6vh;
-  }
-
-  .playtext2 i {
-    font-size: 2.6vh;
-  }
-
-  .text {
-    font-size: 5vh;
-  }
-
-  .text h4 {
-    font-size: 2vh;
-  }
-
-  .songcard {
-    min-height: 23vh;
-  }
-
-  .playBtn {
-    position: absolute;
-    height: 20vh;
-    top: 80%;
-    border-top-left-radius: 3vw;
-    border-top-right-radius: 3vw;
-    z-index: 999;
-  }
-
-  .artists {
-    position: relative;
-    top: -5vh;
-    -ms-grid-columns: none;
-    grid-template-columns: none;
-  }
-
-  .artists h4 {
-    font-size: 2.6vh;
-  }
-
-  .artists i {
-    font-size: 2.6vh;
-  }
-
-  .singerss {
-    min-height: 15vh;
-    max-height: 15vh;
-    overflow-x: auto;
-    gap: 3vh;
-  }
-
-  .artistsDiv1,
-  .artistsDiv2 {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    gap: 4vw;
-  }
-
-  .img2 {
-    max-height: 10vh;
-    min-height: 10vh;
-    min-width: 10vh;
-    max-width: 10vh;
-  }
-
-  .img2 img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: top;
-    object-position: top;
-  }
-
-  .text2 {
-    min-width: 15vh;
-
-  }
-
-  .songList {
-    position: absolute;
-    bottom: -30vh;
-    width: 100%;
-    height: 0%;
-    max-height: 72vh;
-    border-radius: 4vw;
-    overflow: hidden;
-    -webkit-transition: height 1.2s ease-in-out;
-    -o-transition: height 1.2s ease-in-out;
-    transition: height 1.2s ease-in-out;
-    z-index: 200;
-  }
-
-  .Follow {
-    color: rgb(179, 179, 179)
-  }
-
-  .containerKasset {
-    display: none;
-  }
-
-  .songss {
-    left: 6vw;
-    margin-top: 2vw;
-  }
-
-  .songss span {
-    font-size: 2.7vh;
-    margin-right: 2vw;
-    color: rgb(49, 49, 49);
-  }
-
-  .songss i {
-    font-size: 2.7vh;
-    color: rgb(112, 112, 112);
-  }
-
-  .songlistbg {
-    top: 0;
-    height: 100%;
-    z-index: 2;
-    background-color: rgb(151, 151, 151);
-  }
-
-  .singerdiv {
-    min-width: 25vh;
-    max-width: 25vh;
-  }
-
-  .listItem {
-    height: 10vh;
-  }
-
-  .poster2 {
-    width: 8vh;
-    height: 8vh;
-    margin-left: 2vw;
-  }
-
-
-  .songDivs {
-    width: 100%;
-    height: 100%;
-    padding: 5vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-  }
-
-  .albumName {
-    font-size: 3.5vw;
-  }
-
-  .moviename {
-    color: rgb(179, 179, 179);
-  }
-
-  .btns {
-    width: 7vh;
-    height: 7vh;
-    border-radius: 2vw;
-  }
-
-  .text3 {
-    position: relative;
-    top: -2vh;
-    margin-left: 2vw;
-  }
-
-  .text3 h4 {
-    font-size: 3.8vw;
-    margin-bottom: 1vw;
-  }
-
-  .text2 h4 {
-    font-size: 2.3vh;
-  }
-
-  .btnsdiv i {
-    font-size: 4.5vh;
-  }
-
-  .poster {
-    position: relative;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    bottom: 15vh;
-    width: 14vh;
-    height: 14vh;
-    z-index: 999;
-  }
-
-  .uparrow {
-    bottom: -38vh;
-    color: rgb(165, 165, 165);
-    opacity: 1;
-    z-index: 90;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-
-  .close {
-    font-size: 3vh;
-    color: rgb(68, 68, 68);
-    z-index: 990;
-    right: 6%;
-    bottom: 36vh;
-    -webkit-transition: opacity 1.2s ease-in-out;
-    -o-transition: opacity 1.2s ease-in-out;
-    transition: opacity 1.2s ease-in-out;
-  }
-
-  .uparrow i {
-    font-size: 7vh;
-  }
-}
 
 @media only screen and (min-device-width : 376px) and (max-device-width : 425px) {
+  
   .sections {
     width: 100vw;
     display: -ms-grid;
@@ -1008,7 +590,8 @@
     -ms-grid-columns: none;
     grid-template-columns: none;
     overflow-x: hidden;
-    height: 91vh;
+    height: 80vh;
+    
     border-radius: 0%;
   }
 
@@ -1027,9 +610,11 @@
     height: 11vh;
     z-index: 56;
   }
-.AppName img{
-  max-width: 30vh;
-}
+
+  .AppName img {
+    max-width: 30vh;
+  }
+
   .logo {
     width: 28vh;
   }
@@ -1069,7 +654,7 @@
     border-bottom-right-radius: 5vw;
     border-top-left-radius: 5vw;
     max-height: 67vh;
-    z-index: 55;
+    z-index: 999;
     background-color: #374151;
     border: 1px solid gray;
   }
@@ -1168,7 +753,15 @@
     top: -0.9vh;
     overflow-x: scroll;
   }
-
+  .artiststext{
+    margin-right: 1vh;
+  }
+  .playtext2{
+    margin-right: 1vh;
+  }
+  .playtext{
+    margin-right: 1vh;
+  }
   .playtext h4 {
     font-size: 2.6vh;
   }
@@ -1249,8 +842,8 @@
 
   .playBtn {
     position: absolute;
-    height: 21vh;
-    top: 90%;
+    height: 22vh;
+    top: 78%;
     border-top-left-radius: 3vw;
     border-top-right-radius: 3vw;
     z-index: 999;
@@ -1320,7 +913,7 @@
 
   .songList {
     position: absolute;
-    bottom: -31vh;
+    bottom: -40vh;
     width: 80%;
     height: 0%;
     left: 50%;
@@ -1389,9 +982,11 @@
   }
 
   .btns {
-    width: 8vh;
-    height: 8vh;
+    width: 7vh;
+    height: 7vh;
     border-radius: 2vw;
+    position: relative;
+    bottom: 1.2vh;
   }
 
   .text3 {
@@ -1405,8 +1000,11 @@
     margin-bottom: 1vw;
   }
 
+  .btnsdiv{
+    gap: 2vh;
+  }
   .btnsdiv i {
-    font-size: 4.7vh;
+    font-size: 4.4vh;
   }
 
   .poster {
@@ -1422,24 +1020,23 @@
   }
 
   .uparrow {
-    position: absolute;
-    bottom: -38vh;
-    color: black;
+    position: fixed;
+    bottom: 27%;
+    color: rgb(204, 204, 204);
     opacity: 1;
     z-index: 90;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    color: rgb(165, 165, 165);
   }
 
   .close {
     font-size: 3vh;
     color: rgb(68, 68, 68);
-    z-index: 990;
+    z-index: 9999;
     right: 16%;
-    bottom: 41vh;
+    bottom: 40%;
     -webkit-transition: opacity 1.2s ease-in-out;
     -o-transition: opacity 1.2s ease-in-out;
     transition: opacity 1.2s ease-in-out;
@@ -1462,7 +1059,7 @@
     -ms-grid-columns: none;
     grid-template-columns: none;
     overflow-x: hidden;
-    height: 92vh;
+    height: 80vh;
     border-radius: 0%;
   }
 
@@ -1481,9 +1078,11 @@
     height: 11vh;
     z-index: 56;
   }
-  .AppName img{
+
+  .AppName img {
     max-width: 30vh;
   }
+
   .logo {
     width: 28vh;
   }
@@ -1625,10 +1224,17 @@
 
   .playlist {
     height: 33vh;
-
     overflow-x: scroll;
   }
-
+  .artiststext{
+    margin-right: 1vh;
+  }
+  .playtext2{
+    margin-right: 1vh;
+  }
+  .playtext{
+    margin-right: 1vh;
+  }
   .playtext h4 {
     font-size: 2.8vw;
   }
@@ -1709,8 +1315,8 @@
 
   .playBtn {
     position: absolute;
-    height: 21vh;
-    top: 90%;
+    height: 23vh;
+    top: 77%;
     border-top-left-radius: 3vw;
     border-top-right-radius: 3vw;
     z-index: 999;
@@ -1780,14 +1386,14 @@
 
   .songList {
     position: absolute;
-    bottom: -31vh;
+    bottom: -44vh;
     width: 75%;
     height: 0%;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    max-height: 84vh;
+    max-height: 80vh;
     border-radius: 3vh;
     overflow: hidden;
     -webkit-transition: height 1.2s ease-in-out;
@@ -1813,7 +1419,6 @@
 
   .songss i {
     font-size: 3.2vh;
-    margin-top: 1vh;
     color: rgb(112, 112, 112);
   }
 
@@ -1825,7 +1430,7 @@
   }
 
   .listItem {
-    height: 12vh;
+    height: 11vh;
   }
 
   .poster2 {
@@ -1846,13 +1451,15 @@
   }
 
   .albumName {
-    font-size: 2.6vh;
+    font-size: 2.4vh;
   }
 
   .btns {
-    width: 8vh;
-    height: 8vh;
-    border-radius: 2vh;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 1.5vh;
+    position: relative;
+    bottom: 1vh;
   }
 
   .text3 {
@@ -1862,12 +1469,15 @@
   }
 
   .text3 h4 {
-    font-size: 2.7vh;
+    font-size: 2.5vh;
     margin-bottom: 1vh;
   }
 
+  .btnsdiv {
+    gap: 2vh;
+  }
   .btnsdiv i {
-    font-size: 4.7vh;
+    font-size: 4.4vh;
   }
 
   .poster {
@@ -1883,9 +1493,9 @@
   }
 
   .uparrow {
-    position: absolute;
-    bottom: -42%;
-    color: rgb(165, 165, 165);
+    position: fixed;
+    bottom: 27%;
+    color: rgb(204, 204, 204);
     opacity: 1;
     z-index: 90;
     left: 50%;
@@ -1897,9 +1507,9 @@
   .close {
     font-size: 3vh;
     color: rgb(68, 68, 68);
-    z-index: 990;
-    right: 18vw;
-    bottom: 51%;
+    z-index: 9999;
+    right: 20%;
+    bottom: 37%;
     -webkit-transition: opacity 1.2s ease-in-out;
     -o-transition: opacity 1.2s ease-in-out;
     transition: opacity 1.2s ease-in-out;
@@ -1918,7 +1528,7 @@
     -ms-grid-columns: none;
     grid-template-columns: none;
     overflow-x: hidden;
-    height: 93vh;
+    height: 94vh;
     border-radius: 0%;
   }
 
@@ -1946,7 +1556,7 @@
     font-size: 6.5vh;
   }
 
-  .AppName img{
+  .AppName img {
     max-width: 35vh;
   }
 
@@ -2084,7 +1694,15 @@
     top: -1vh;
     overflow-x: scroll;
   }
-
+  .artiststext{
+    margin-right: 1vh;
+  }
+  .playtext2{
+    margin-right: 1vh;
+  }
+  .playtext{
+    margin-right: 1vh;
+  }
   .playtext h4 {
     font-size: 2.7vh;
   }
@@ -2168,8 +1786,8 @@
 
   .playBtn {
     position: absolute;
-    height: 21vh;
-    top: 90%;
+    height: 22vh;
+    top: 78%;
     border-top-left-radius: 3vw;
     border-top-right-radius: 3vw;
     z-index: 999;
@@ -2239,7 +1857,7 @@
 
   .songList {
     position: absolute;
-    bottom: -32vh;
+    bottom: -15vh;
     width: 66%;
     height: 0%;
     left: 50%;
@@ -2309,9 +1927,11 @@
   }
 
   .btns {
-    width: 8vh;
-    height: 8vh;
-    border-radius: 2vh;
+    width: 7.3vh;
+    height: 7.3vh;
+    border-radius: 1.6vh;
+    position: relative;
+    bottom: 1.2vh;
   }
 
   .text3 {
@@ -2325,6 +1945,9 @@
     margin-bottom: 1vh;
   }
 
+  .btnsdiv {
+    gap: 2vh;
+  }
   .btnsdiv i {
     font-size: 4.7vh;
   }
@@ -2339,16 +1962,16 @@
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: 18vh;
+    bottom: 20vh;
     width: 17vh;
     height: 17vh;
     z-index: 999;
   }
 
   .uparrow {
-    position: absolute;
-    bottom: -42%;
-    color: rgb(165, 165, 165);
+    position: fixed;
+    bottom: 30%;
+    color: rgb(204, 204, 204);
     opacity: 1;
     z-index: 90;
     left: 50%;
@@ -2360,9 +1983,9 @@
   .close {
     font-size: 3.2vh;
     color: rgb(68, 68, 68);
-    z-index: 990;
+    z-index: 9999;
     right: 22vw;
-    bottom: 45.8%;
+    bottom: 64%;
     -webkit-transition: opacity 1.2s ease-in-out;
     -o-transition: opacity 1.2s ease-in-out;
     transition: opacity 1.2s ease-in-out;
@@ -2409,7 +2032,7 @@
     font-size: 6.5vh;
   }
 
-  .AppName img{
+  .AppName img {
     max-width: 38vh;
   }
 
@@ -2547,7 +2170,16 @@
     top: -1vh;
     overflow-x: scroll;
   }
-
+  .artiststext{
+    margin-right: 1vh;
+  }
+  
+  .playtext2{
+    margin-right: 1vh;
+  }
+  .playtext{
+    margin-right: 1vh;
+  }
   .playtext h4 {
     font-size: 2.7vh;
   }
@@ -2627,8 +2259,8 @@
 
   .playBtn {
     position: absolute;
-    height: 21vh;
-    top: 90%;
+    height: 23vh;
+    top: 77%;
     border-top-left-radius: 3vw;
     border-top-right-radius: 3vw;
     z-index: 999;
@@ -2698,7 +2330,7 @@
 
   .songList {
     position: absolute;
-    bottom: -31vh;
+    bottom: -19vh;
     width: 55%;
     height: 0%;
     left: 50%;
@@ -2768,9 +2400,11 @@
   }
 
   .btns {
-    width: 8vh;
-    height: 8vh;
-    border-radius: 2vh;
+    width: 7.5vh;
+    height: 7.5vh;
+    border-radius: 1.6vh;
+    position: relative;
+    bottom: 2vh;
   }
 
   .text3 {
@@ -2784,6 +2418,9 @@
     margin-bottom: 1vh;
   }
 
+  .btnsdiv {
+    gap: 2vh;
+  }
   .btnsdiv i {
     font-size: 4.7vh;
   }
@@ -2798,16 +2435,16 @@
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: 18vh;
+    bottom: 21vh;
     width: 17vh;
     height: 17vh;
     z-index: 999;
   }
 
   .uparrow {
-    position: absolute;
-    bottom: -42%;
-    color: rgb(165, 165, 165);
+    position: fixed;
+    bottom: 30%;
+    color: rgb(204, 204, 204);
     opacity: 1;
     z-index: 90;
     left: 50%;
@@ -2821,7 +2458,7 @@
     color: rgb(68, 68, 68);
     z-index: 990;
     right: 28vw;
-    bottom: 46%;
+    bottom: 59.5%;
     -webkit-transition: opacity 1.2s ease-in-out;
     -o-transition: opacity 1.2s ease-in-out;
     transition: opacity 1.2s ease-in-out;
@@ -3066,14 +2703,16 @@
     width: 7vh;
     height: 7vh;
   }
-
+  .btnsdiv{
+    gap: 2vh;
+  }
   .btnsdiv i {
     font-size: 4.4vh;
   }
 
   .poster {
     position: relative;
-    bottom: 5.5vw;
+    bottom: 10vh;
     width: 15vh;
     height: 15vh;
     left: 5.5vw;
@@ -3404,6 +3043,7 @@
 
   .btnsdiv {
     bottom: 2vh;
+      gap: 2vh;
   }
 
   .btnsdiv i {
@@ -3443,6 +3083,7 @@
     min-width: 25vh;
   }
 }
+
 @media only screen and (min-device-width : 1367px) and (max-device-width : 1440px) {
   .sections {
     height: 85vh;
@@ -3739,6 +3380,7 @@
     min-width: 25vh;
   }
 }
+
 @media only screen and (min-device-width : 1441px) and (max-device-width : 2560px) {
   .sections {
     -ms-grid-columns: 20vw 50vw 30vw;
@@ -3952,7 +3594,10 @@
     margin-bottom: 1vw;
     font-size: 2.6vh;
   }
-
+  .poster {
+    position: relative;
+    bottom: 9vh;
+  }
   .poster2 {
     width: 4vw;
     height: 4vw;
@@ -4019,5 +3664,499 @@
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1280px) and (min-height: 2000px) and (max-height: 2800px) {
+  .sections {
+    width: 100vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    overflow-x: hidden;
+    height: 81vh;
+    border-radius: 0%;
+    overflow-y: scroll;
+  }
+
+  .sections::-webkit-scrollbar {
+    display: none;
+  }
+
+  .AppName {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 2vh;
+    height: 10vh;
+    z-index: 56;
+  }
+
+  .AppName h1 {
+    font-size: 4.5vh;
+  }
+
+  .AppName img {
+    max-width: 17vh;
+  }
+
+  .baars {
+    opacity: 1;
+    right: 2vh;
+    font-size: 4.5vh;
+    z-index: 20;
+    color: rgb(165, 165, 165);
+  }
+
+  .navi {
+    top: 10vh;
+    width: 100%;
+    position: absolute;
+    padding-top: 3.5vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 23vh 20vh 22vh;
+    grid-template-rows: 23vh 20vh 22vh;
+    height: 0%;
+    opacity: 0;
+    -webkit-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    -o-transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    transition: height 1.5s ease-out, opacity 1.5s ease-out;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    max-height: 70vh;
+    z-index: 999;
+    background-color: #374151;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+  }
 
 
+  .navi li {
+    font-size: 2.7vh;
+    padding-left: 36vw;
+    color: rgb(165, 165, 165);
+    margin-bottom: 1vh;
+  }
+
+  .navi h4 {
+    padding-left: 36vw;
+    font-size: 2vh;
+    font-weight: bold;
+    color: rgb(194, 194, 194);
+  }
+
+  .cardsec {
+    min-height: 100vh;
+    max-height: 100vh;
+    position: relative;
+    -ms-grid-rows: 10vh 18vh 50vh 15vh;
+    grid-template-rows: 10vh 18vh 50vh 15vh;
+    padding: 0;
+    border: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .search {
+    padding-left: 1.1vw;
+    position: relative;
+    left: 3%;
+    top: -0.5vh;
+  }
+
+  .inputs {
+    width: 25vh;
+    margin-left: 2vh;
+  }
+
+  .angles {
+    font-size: 5.5vw;
+  }
+
+  .mg {
+    font-size: 3.5vw;
+    padding-left: 1vw;
+  }
+
+  .inputsbox {
+    width: 100%;
+    font-size: 2vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-webkit-input-placeholder {
+    font-size: 1.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-moz-placeholder {
+    font-size: 1.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox:-ms-input-placeholder {
+    font-size: 1.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::-ms-input-placeholder {
+    font-size: 1.6vh;
+    padding-left: 1vw;
+  }
+
+  .inputsbox::placeholder {
+    font-size: 1.6vh;
+    padding-left: 1vw;
+  }
+
+  .BgDiv {
+    height: 13vh;
+    z-index: 1;
+    top: 0vh;
+  }
+
+  .BgDiv i {
+    position: relative;
+    font-size: 13vh;
+    z-index: 1;
+    left: -5vh;
+  }
+
+  .BgDiv h1 {
+    font-size: 5vh;
+    left: 3vh;
+    z-index: 2;
+  }
+
+  .playlist {
+    position: relative;
+    min-height: 26vh;
+    max-height: 26vh;
+    top: -6vh;
+    overflow: visible;
+  }
+
+  .playtext h4 {
+    font-size: 2.4vh;
+    margin-right: 1vh;
+  }
+
+  .playtext i {
+    font-size: 2.5vh;
+  }
+
+
+  .playlistBox {
+    min-height: 20vh;
+    max-height: 20vh;
+    gap: 2vh;
+  }
+
+  .card {
+    min-width: 20vh;
+    max-width: 20vh;
+    max-height: 20vh;
+    min-height: 20vh;
+    border-radius: 1.2vh;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .card2 {
+    max-width: 13vh;
+    min-width: 13vh;
+    max-height: 100%;
+    min-height: 100%;
+
+  }
+
+  .img {
+    max-width: 100%;
+    max-height: 13vh;
+  }
+
+  .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    border-radius: 1vh;
+  }
+
+  .play {
+    padding: 0;
+    position: relative;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    top: -30vh;
+    min-height: 47vh;
+    max-height: 47vh;
+  }
+
+  .playtext2 h4 {
+    font-size: 2.4vh;
+    margin-right: 1vh;
+  }
+
+  .playtext2 i {
+    font-size: 2.5vh;
+  }
+
+  .text {
+    font-size: 5vh;
+  }
+
+  .text h4 {
+    font-size: 2vh;
+  }
+
+  .songcard {
+    min-height: 22vh;
+    max-height: 22vh;
+    gap: 2vh;
+    overflow-x: auto;
+  }
+
+  .playBtn {
+    height: 20vh;
+    top: 80%;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+    z-index: 999;
+  }
+
+  .artists {
+    position: relative;
+    top: -8vh;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+
+  .artists h4 {
+    font-size: 2.4vh;
+    margin-right: 1vh;
+  }
+
+  .artists i {
+    font-size: 2.5vh;
+  }
+
+  .singerss {
+    min-height: 15vh;
+    max-height: 15vh;
+    overflow-x: auto;
+    gap: 3vh;
+  }
+
+  .artistsDiv1,
+  .artistsDiv2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 4vw;
+  }
+
+  .img2 {
+    max-height: 10vh;
+    min-height: 10vh;
+    min-width: 10vh;
+    max-width: 10vh;
+  }
+
+  .img2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .text2 {
+    min-width: 15vh;
+
+  }
+
+  .songList {
+    position: absolute;
+    bottom: -19%;
+    width: 100%;
+    height: 0%;
+    max-height: 67vh;
+    max-height: 67vh;
+    border-radius: 4vw;
+    overflow: hidden;
+    -webkit-transition: height 1.2s ease-in-out;
+    -o-transition: height 1.2s ease-in-out;
+    transition: height 1.2s ease-in-out;
+    z-index: 200;
+    background-color: #fff01a;
+  }
+
+  .Follow {
+    color: rgb(179, 179, 179)
+  }
+
+  .containerKasset {
+    display: none;
+  }
+
+  .songss {
+    left: 6vw;
+    margin-top: 1vh;
+  }
+
+  .songss span {
+    font-size: 2.7vh;
+    margin-right: 2vw;
+    color: rgb(49, 49, 49);
+  }
+
+  .songss i {
+    font-size: 2.7vh;
+    color: rgb(112, 112, 112);
+  }
+
+  .songlistbg {
+    top: 0vh;
+    min-height: 100%;
+    max-height: 100%;
+    z-index: 2;
+    background-color: rgb(151, 151, 151);
+  }
+
+  .singerdiv {
+    min-width: 25vh;
+    max-width: 25vh;
+  }
+
+  .listItem {
+    height: 10vh;
+    border-radius: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  .poster2 {
+    width: 8vh;
+    height: 8vh;
+    margin-left: 2vw;
+    border-radius: 0.8vh;
+  }
+
+
+  .songDivs {
+    width: 100%;
+    height: 100%;
+    padding: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+  }
+
+  .albumName {
+    font-size: 5vh;
+  }
+
+  .moviename {
+    color: rgb(179, 179, 179);
+  }
+
+  .btns {
+    position: relative;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 3vw;
+    bottom: 2vh;
+  }
+
+  .text3 {
+    position: relative;
+    top: -2vh;
+    margin-left: 2vw;
+  }
+
+  .text3 h4 {
+    font-size: 5vw;
+    margin-bottom: 7vw;
+  }
+
+  .text2 h4 {
+    font-size: 2.1vh;
+  }
+
+  .text4 i {
+    font-size: 2.3vh;
+  }
+
+  .text4 span {
+    font-size: 2vh;
+  }
+
+  .btnsdiv {
+    gap: 2vh;
+  }
+  .btnsdiv i {
+    font-size: 4.5vh;
+  }
+  .artiststext{
+    margin-right: 1vh;
+  }
+  .playtext2{
+    margin-right: 1vh;
+  }
+  .playtext{
+    margin-right: 1vh;
+  }
+  .poster {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 15vh;
+    width: 14vh;
+    height: 14vh;
+    z-index: 899;
+    border-radius: 1.2vh;
+  }
+
+  .uparrow {
+    position: fixed;
+    bottom:25%;
+    color: rgb(204, 204, 204);
+    opacity: 1;
+    z-index: 90;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .close {
+    font-size: 3vh;
+    color: rgb(68, 68, 68);
+    z-index: 9999;
+    right: 6%;
+    bottom: 56.5%;
+    -webkit-transition: opacity 1.2s ease-in-out;
+    -o-transition: opacity 1.2s ease-in-out;
+    transition: opacity 1.2s ease-in-out;
+  }
+
+  .uparrow i {
+    font-size: 7vh;
+  }
+}

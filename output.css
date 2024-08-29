@@ -2416,7 +2416,7 @@ body {
     display: grid;
     grid-template-columns: none;
     overflow-x: hidden;
-    height: 94vh;
+    height: 82vh;
     border-radius: 0%;
   }
 
@@ -2854,7 +2854,7 @@ body {
     display: grid;
     grid-template-columns: none;
     overflow-x: hidden;
-    height: 94vh;
+    height: 86vh;
     border-radius: 0%;
   }
 
@@ -4416,7 +4416,6 @@ body {
     overflow-x: hidden;
     height: 84vh;
     border-radius: 0%;
-    overflow-y: scroll;
   }
 
   .sections::-webkit-scrollbar {
@@ -4641,7 +4640,7 @@ body {
   }
 
   .text h4 {
-    font-size: 2vh;
+    font-size: 1.8vh;
   }
 
   .songcard {
@@ -4785,8 +4784,8 @@ body {
 
   .btns {
     position: relative;
-    width: 7vh;
-    height: 7vh;
+    width: 6vh;
+    height: 6vh;
     border-radius: 1.4vh;
     bottom: 2vh;
   }
@@ -4815,11 +4814,11 @@ body {
   }
 
   .btnsdiv {
-    gap: 2vh;
+    gap: 1.7vh;
   }
 
   .btnsdiv i {
-    font-size: 4.5vh;
+    font-size: 3.8vh;
   }
 
   .artiststext {

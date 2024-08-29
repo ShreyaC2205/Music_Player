@@ -7,26 +7,21 @@ var arr = [{ songName: "Phir se ud chala", albumName: "Rockstar", duration: "4:3
 var songsDiv = document.querySelector(".songDivs");
 var posterr = document.querySelector(".SongPlayer")
 var bars = document.querySelector(".baars")
-// var ExploreContainer = document.querySelector(".ExploreContainer")
 var navi = document.querySelector(".navi")
 var uparrow = document.querySelector(".uparrow")
 var close = document.querySelector(".close")
 var songList = document.querySelector(".songList")
 
 var expand = 0
-// var expand2 = 0
-// var expand3 = 1
 var isExpanded = false;
 
 bars.addEventListener("click", function () {
     if (expand === 0) {
-        // ExploreContainer.style.height = "0%";
         navi.style.height = "0%";
         navi.style.opacity = 0;
         expand = 1;
     }
     else {
-        // ExploreContainer.style.height = "100%";
         navi.style.height = "100%";
         navi.style.opacity = 1;
         expand = 0;
@@ -122,7 +117,7 @@ Btn2.addEventListener("click", function () {
     }
 })
 
-Btn3.addEventListener("click", function () { //forward
+Btn3.addEventListener("click", function () { 
     if (selectedSong < arr.length - 1) {
         selectedSong++
         playSong()
@@ -133,7 +128,7 @@ Btn3.addEventListener("click", function () { //forward
     }
 })
 
-Btn1.addEventListener("click", function () { //backward
+Btn1.addEventListener("click", function () { 
     if (selectedSong > 0) {
         selectedSong--
         playSong()
